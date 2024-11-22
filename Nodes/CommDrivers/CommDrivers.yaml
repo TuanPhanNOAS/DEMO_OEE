@@ -1,0 +1,7 @@
+Name: CommDrivers
+Type: CommDriversCategoryFolder
+Children:
+- File: SiemensPLC/SiemensPLC.yaml
+- File: DeltaPLC_Modbus/DeltaPLC_Modbus.yaml
+- File: MitsuPLC/MitsuPLC.yaml
+- File: Micro1400/Micro1400.yaml

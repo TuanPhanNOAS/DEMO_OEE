@@ -1,0 +1,14 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- File: Tag/Tag.yaml
+- File: Machine_Fault/Machine_Fault.yaml
+- File: Bad_product/Bad_product.yaml
+- File: BatchID/BatchID.yaml
+- File: MachineID/MachineID.yaml
+- File: Operator_ID/Operator_ID.yaml
+- File: Target_Speed/Target_Speed.yaml
+- Name: TestPopup
+  Type: BaseDataVariableType
+  DataType: Int32
+- File: Convert2InternalTag/Convert2InternalTag.yaml

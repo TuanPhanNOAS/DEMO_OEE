@@ -1,0 +1,1467 @@
+Name: Tags
+Type: FolderType
+Children:
+- Name: second_up_Counter
+  Type: TagStructure
+  DataType: Structure
+  Value: 
+   {
+    "Type": 22,
+    "Body": {
+     "TypeId": {
+      "IdType": 0,
+      "Id": 0,
+      "Namespace": -1
+     },
+     "Body":    {}
+    }
+   }
+  Children:
+  - Name: S
+    Type: MelsecQTag
+    DataType: Boolean
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 12
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+  - Name: C
+    Type: MelsecQTag
+    DataType: Boolean
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 13
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+  - Name: N
+    Type: MelsecQTag
+    DataType: UInt16
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 14
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+- Name: Min_up_Counter
+  Type: TagStructure
+  DataType: Structure
+  Value: 
+   {
+    "Type": 22,
+    "Body": {
+     "TypeId": {
+      "IdType": 0,
+      "Id": 0,
+      "Namespace": -1
+     },
+     "Body":    {}
+    }
+   }
+  Children:
+  - Name: S
+    Type: MelsecQTag
+    DataType: Boolean
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 12
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 1
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+  - Name: C
+    Type: MelsecQTag
+    DataType: Boolean
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 13
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 1
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+  - Name: N
+    Type: MelsecQTag
+    DataType: UInt16
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 14
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 1
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+- Name: Hour_up_Counter
+  Type: TagStructure
+  DataType: Structure
+  Value: 
+   {
+    "Type": 22,
+    "Body": {
+     "TypeId": {
+      "IdType": 0,
+      "Id": 0,
+      "Namespace": -1
+     },
+     "Body":    {}
+    }
+   }
+  Children:
+  - Name: S
+    Type: MelsecQTag
+    DataType: Boolean
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 12
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 2
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+  - Name: C
+    Type: MelsecQTag
+    DataType: Boolean
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 13
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 2
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+  - Name: N
+    Type: MelsecQTag
+    DataType: UInt16
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 14
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 2
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+- Name: Second_dwn_Counter
+  Type: TagStructure
+  DataType: Structure
+  Value: 
+   {
+    "Type": 22,
+    "Body": {
+     "TypeId": {
+      "IdType": 0,
+      "Id": 0,
+      "Namespace": -1
+     },
+     "Body":    {}
+    }
+   }
+  Children:
+  - Name: S
+    Type: MelsecQTag
+    DataType: Boolean
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 12
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 3
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+  - Name: C
+    Type: MelsecQTag
+    DataType: Boolean
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 13
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 3
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+  - Name: N
+    Type: MelsecQTag
+    DataType: UInt16
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 14
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 3
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+- Name: Min_dwn_Counter
+  Type: TagStructure
+  DataType: Structure
+  Value: 
+   {
+    "Type": 22,
+    "Body": {
+     "TypeId": {
+      "IdType": 0,
+      "Id": 0,
+      "Namespace": -1
+     },
+     "Body":    {}
+    }
+   }
+  Children:
+  - Name: S
+    Type: MelsecQTag
+    DataType: Boolean
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 12
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 4
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+  - Name: C
+    Type: MelsecQTag
+    DataType: Boolean
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 13
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 4
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+  - Name: N
+    Type: MelsecQTag
+    DataType: UInt16
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 14
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 4
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+- Name: Hour_dwn_Counter
+  Type: TagStructure
+  DataType: Structure
+  Value: 
+   {
+    "Type": 22,
+    "Body": {
+     "TypeId": {
+      "IdType": 0,
+      "Id": 0,
+      "Namespace": -1
+     },
+     "Body":    {}
+    }
+   }
+  Children:
+  - Name: S
+    Type: MelsecQTag
+    DataType: Boolean
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 12
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 5
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+  - Name: C
+    Type: MelsecQTag
+    DataType: Boolean
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 13
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 5
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+  - Name: N
+    Type: MelsecQTag
+    DataType: UInt16
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 14
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 5
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+- Name: alarm_visible
+  Type: MelsecQTag
+  DataType: Int16
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 14
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 6
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: sim
+  Type: MelsecQTag
+  DataType: Int16
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 7
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: inserd_bad
+  Type: MelsecQTag
+  DataType: Int16
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 7
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 2
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseDataVariableType
+      DataType: Double
+    - Name: High
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 100.0
+    - Name: Constrain
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+- Name: plan_cut
+  Type: MelsecQTag
+  DataType: Int16
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 7
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 3
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Good_Prod
+  Type: MelsecQTag
+  DataType: Int16
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 7
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 4
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Bad_to_count
+  Type: MelsecQTag
+  DataType: Int16
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 7
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 5
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Bad_Prod
+  Type: MelsecQTag
+  DataType: Int16
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 7
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 6
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Total_Prod
+  Type: MelsecQTag
+  DataType: Int16
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 7
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 7
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: second_up
+  Type: TagStructure
+  DataType: Structure
+  Value: 
+   {
+    "Type": 22,
+    "Body": {
+     "TypeId": {
+      "IdType": 0,
+      "Id": 0,
+      "Namespace": -1
+     },
+     "Body":    {}
+    }
+   }
+  Children:
+  - Name: S
+    Type: MelsecQTag
+    DataType: Boolean
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 12
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+  - Name: C
+    Type: MelsecQTag
+    DataType: Boolean
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 13
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+  - Name: N
+    Type: MelsecQTag
+    DataType: UInt16
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 14
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+- Name: Min_up
+  Type: TagStructure
+  DataType: Structure
+  Value: 
+   {
+    "Type": 22,
+    "Body": {
+     "TypeId": {
+      "IdType": 0,
+      "Id": 0,
+      "Namespace": -1
+     },
+     "Body":    {}
+    }
+   }
+  Children:
+  - Name: S
+    Type: MelsecQTag
+    DataType: Boolean
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 12
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 1
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+  - Name: C
+    Type: MelsecQTag
+    DataType: Boolean
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 13
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 1
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+  - Name: N
+    Type: MelsecQTag
+    DataType: UInt16
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 14
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 1
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+- Name: Hour_up
+  Type: TagStructure
+  DataType: Structure
+  Value: 
+   {
+    "Type": 22,
+    "Body": {
+     "TypeId": {
+      "IdType": 0,
+      "Id": 0,
+      "Namespace": -1
+     },
+     "Body":    {}
+    }
+   }
+  Children:
+  - Name: S
+    Type: MelsecQTag
+    DataType: Boolean
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 12
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 2
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+  - Name: C
+    Type: MelsecQTag
+    DataType: Boolean
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 13
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 2
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+  - Name: N
+    Type: MelsecQTag
+    DataType: UInt16
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 14
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 2
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+- Name: Second_dwn
+  Type: TagStructure
+  DataType: Structure
+  Value: 
+   {
+    "Type": 22,
+    "Body": {
+     "TypeId": {
+      "IdType": 0,
+      "Id": 0,
+      "Namespace": -1
+     },
+     "Body":    {}
+    }
+   }
+  Children:
+  - Name: S
+    Type: MelsecQTag
+    DataType: Boolean
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 12
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 3
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+  - Name: C
+    Type: MelsecQTag
+    DataType: Boolean
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 13
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 3
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+  - Name: N
+    Type: MelsecQTag
+    DataType: UInt16
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 14
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 3
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+- Name: Min_dwn
+  Type: TagStructure
+  DataType: Structure
+  Value: 
+   {
+    "Type": 22,
+    "Body": {
+     "TypeId": {
+      "IdType": 0,
+      "Id": 0,
+      "Namespace": -1
+     },
+     "Body":    {}
+    }
+   }
+  Children:
+  - Name: S
+    Type: MelsecQTag
+    DataType: Boolean
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 12
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 4
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+  - Name: C
+    Type: MelsecQTag
+    DataType: Boolean
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 13
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 4
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+  - Name: N
+    Type: MelsecQTag
+    DataType: UInt16
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 14
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 4
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+- Name: Hour_dwn
+  Type: TagStructure
+  DataType: Structure
+  Value: 
+   {
+    "Type": 22,
+    "Body": {
+     "TypeId": {
+      "IdType": 0,
+      "Id": 0,
+      "Namespace": -1
+     },
+     "Body":    {}
+    }
+   }
+  Children:
+  - Name: S
+    Type: MelsecQTag
+    DataType: Boolean
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 12
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 5
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+  - Name: C
+    Type: MelsecQTag
+    DataType: Boolean
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 13
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 5
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+  - Name: N
+    Type: MelsecQTag
+    DataType: UInt16
+    Children:
+    - Name: MemoryArea
+      Type: BaseDataVariableType
+      DataType: MemoryArea
+      Value: 14
+    - Name: NumDevice
+      Type: BaseDataVariableType
+      DataType: UInt32
+      Value: 5
+    - Name: BitOffset
+      Type: BaseDataVariableType
+      DataType: UInt32
+- Name: pro_sim
+  Type: MelsecQTag
+  DataType: Int16
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 7
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 207
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseDataVariableType
+      DataType: Double
+    - Name: High
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 60.0
+    - Name: Constrain
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+- Name: Sec_Up
+  Type: MelsecQTag
+  DataType: Int16
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 7
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 9
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Min_Up
+  Type: MelsecQTag
+  DataType: Int16
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 7
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 10
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Hour_Up
+  Type: MelsecQTag
+  DataType: Int16
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 7
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 11
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Sec_Down
+  Type: MelsecQTag
+  DataType: Int16
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 7
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 12
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Min_Down
+  Type: MelsecQTag
+  DataType: Int16
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 7
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 13
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Hour_Down
+  Type: MelsecQTag
+  DataType: Int16
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 7
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 14
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Actual_Speed
+  Type: MelsecQTag
+  DataType: Int16
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 7
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 15
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Index
+  Type: MelsecQTag
+  DataType: Int16
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 7
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 99
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Actual_Speed_Array
+  Type: MelsecQTag
+  DataType: Int16
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 7
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 100
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Tong
+  Type: MelsecQTag
+  DataType: Int16
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 7
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 200
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Average
+  Type: MelsecQTag
+  DataType: Int16
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 7
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 201
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: shift_1
+  Type: MelsecQTag
+  DataType: Int16
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 7
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 204
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Trigger_bad
+  Type: MelsecQTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 2
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 2
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Reset_bad_sim
+  Type: MelsecQTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 2
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 3
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Alarm
+  Type: MelsecQTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 2
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 4
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Reset_alarm
+  Type: MelsecQTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 2
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 5
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: alarm_cnt
+  Type: MelsecQTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 2
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 6
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: done
+  Type: MelsecQTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 2
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 7
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: tuan
+  Type: MelsecQTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 2
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 8
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Start_Process
+  Type: MelsecQTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 2
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 9
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Stop_Process
+  Type: MelsecQTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 2
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 10
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Falut_1
+  Type: MelsecQTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 2
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 12
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Falut_3
+  Type: MelsecQTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 2
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 14
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Sim_Bad_Prod_Latch
+  Type: MelsecQTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 2
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 15
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Sim_Bad_Prod
+  Type: MelsecQTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 2
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 16
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: AlwaysFalse
+  Type: MelsecQTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 2
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 17
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Trigger_good
+  Type: MelsecQTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 2
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 18
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Trigger_shift
+  Type: MelsecQTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 2
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 21
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: alarm_tmp
+  Type: MelsecQTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 2
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 22
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: alarm_display
+  Type: MelsecQTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 2
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 23
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: machine_fault
+  Id: g=36ac5523cab678d6b09b956b0e5c30fd
+  Type: MelsecQTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 2
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 24
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Falut_2
+  Type: MelsecQTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 2
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 25
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Run
+  Type: MelsecQTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 2
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 110
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: shift_2
+  Type: MelsecQTag
+  DataType: Int16
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 7
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 205
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: shift_3
+  Type: MelsecQTag
+  DataType: Int16
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 7
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 206
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Sample_Time
+  Type: MelsecQTag
+  DataType: Int16
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 7
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 207
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Batch_Complete
+  Type: MelsecQTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 2
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 30
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: 'Trigger_Sample '
+  Type: MelsecQTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+    Value: 2
+  - Name: NumDevice
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 31
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32

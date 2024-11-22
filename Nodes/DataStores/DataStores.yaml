@@ -1,0 +1,526 @@
+Name: DataStores
+Type: DataStoresCategoryFolder
+Children:
+- Name: Machine_Status
+  Id: g=0703d405a04196c7ef0725bf0bf11edb
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: RecipeSchema1
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=9;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=9;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=9;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=9;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Name
+          Type: StoreColumn
+          DataType: String
+        - Name: /MachineID
+          Type: StoreColumn
+          DataType: Int32
+        - Name: /BatchID
+          Type: StoreColumn
+          DataType: Int32
+        - Name: /SampleTime
+          Type: StoreColumn
+          DataType: Int32
+        - Name: /GoodQuantity
+          Type: StoreColumn
+          DataType: Int32
+        - Name: /BadQuantity
+          Type: StoreColumn
+          DataType: Int32
+        - Name: /Uptime
+          Type: StoreColumn
+          DataType: Int32
+        - Name: /DownTime
+          Type: StoreColumn
+          DataType: Int32
+        - Name: /TargetSpeed
+          Type: StoreColumn
+          DataType: Int32
+        - Name: /ActualSpeed
+          Type: StoreColumn
+          DataType: Int32
+        - Name: /Planned Cut
+          Type: StoreColumn
+          DataType: Int32
+        - Name: /TotalCut
+          Type: StoreColumn
+          DataType: Int32
+        - Name: /AverageSpeed
+          Type: StoreColumn
+          DataType: Int32
+        - Name: /ProdNoPerMin
+          Type: StoreColumn
+          DataType: Int32
+        - Name: /BadNoPerMin
+          Type: StoreColumn
+          DataType: Int32
+  - Class: Reference
+    Target: ns=23;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=9;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=59
+    Direction: Forward
+  - Name: InMemory
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Filename
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Machine_file"
+  - Name: Variable1
+    Type: BaseDataVariableType
+    DataType: Int32
+- Name: EmbeddedDatabase1
+  Id: g=56674f0e01673dbcad6978f9037ad294
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: AlarmsEventLogger1
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=9;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=9;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=9;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=9;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: ActiveState_Id
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: AckedState_Id
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: ConfirmedState_Id
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: ConditionName
+          Type: StoreColumn
+          DataType: String
+        - Name: EnabledState_Id
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: SourceName
+          Type: StoreColumn
+          DataType: String
+        - Name: Time
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: 'Message_en-US'
+          Type: StoreColumn
+          DataType: String
+        - Name: 'Message_it-IT'
+          Type: StoreColumn
+          DataType: String
+        - Name: Severity
+          Type: StoreColumn
+          DataType: UInt16
+        - Name: LocalTime
+          Type: StoreColumn
+          DataType: DateTime
+  - Class: Reference
+    Target: ns=23;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=9;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=59
+    Direction: Forward
+- Name: LocalDatabase
+  Type: ODBCStore
+  Children:
+  - Class: Reference
+    Target: ns=9;i=22
+  - Class: Reference
+    Target: ns=9;i=6
+  - Class: Reference
+    Target: ns=9;i=8
+  - Class: Reference
+    Target: ns=9;i=25
+  - Class: Reference
+    Target: ns=9;i=38
+  - Class: Reference
+    Target: ns=9;i=41
+  - Class: Reference
+    Target: ns=9;i=44
+  - Class: Reference
+    Target: ns=9;i=53
+  - Class: Reference
+    Target: ns=9;i=55
+  - Class: Reference
+    Target: ns=9;i=57
+  - Class: Reference
+    Target: ns=9;i=59
+  - Name: ns=9;Tables
+    Type: BaseObjectType
+    Children:
+    - Name: OptixRawDataDemo1
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=9;i=12
+      - Class: Reference
+        Target: ns=9;i=15
+      - Class: Reference
+        Target: ns=9;i=21
+      - Class: Reference
+        Target: ns=9;i=20
+      - Class: Reference
+        Target: ns=9;i=12
+      - Class: Reference
+        Target: ns=9;i=15
+      - Class: Reference
+        Target: ns=9;i=21
+      - Class: Reference
+        Target: ns=9;i=20
+      - Name: ns=9;Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: PlannedCut
+          Type: StoreColumn
+          DataType: Int32
+        - Name: TotalCut
+          Type: StoreColumn
+          DataType: Int32
+        - Name: GoodCut
+          Type: StoreColumn
+          DataType: Int32
+        - Name: TargetSpeed
+          Type: StoreColumn
+          DataType: Float
+        - Name: ActualSpeed
+          Type: StoreColumn
+          DataType: Float
+        - Name: Uptime
+          Type: StoreColumn
+          DataType: Float
+        - Name: EmployeeID
+          Type: StoreColumn
+          DataType: Int32
+        - Name: MachineID
+          Type: StoreColumn
+          DataType: Int32
+        - Name: BatchID
+          Type: StoreColumn
+          DataType: String
+        - Name: Downtime
+          Type: StoreColumn
+          DataType: Float
+        - Name: DowntimeCode
+          Type: StoreColumn
+          DataType: Int32
+        - Name: BadCut
+          Type: StoreColumn
+          DataType: Int32
+        - Name: BadCutCode
+          Type: StoreColumn
+          DataType: Int32
+    - Name: OptixRawDataDemo2
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=9;i=12
+      - Class: Reference
+        Target: ns=9;i=15
+      - Class: Reference
+        Target: ns=9;i=21
+      - Class: Reference
+        Target: ns=9;i=20
+      - Class: Reference
+        Target: ns=9;i=12
+      - Class: Reference
+        Target: ns=9;i=15
+      - Class: Reference
+        Target: ns=9;i=21
+      - Class: Reference
+        Target: ns=9;i=20
+      - Name: ns=9;Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: PlannedCut
+          Type: StoreColumn
+          DataType: Int32
+        - Name: TotalCut
+          Type: StoreColumn
+          DataType: Int32
+        - Name: GoodCut
+          Type: StoreColumn
+          DataType: Int32
+        - Name: TargetSpeed
+          Type: StoreColumn
+          DataType: Float
+        - Name: ActualSpeed
+          Type: StoreColumn
+          DataType: Float
+        - Name: Uptime
+          Type: StoreColumn
+          DataType: Float
+        - Name: EmployeeID
+          Type: StoreColumn
+          DataType: Int32
+        - Name: MachineID
+          Type: StoreColumn
+          DataType: Int32
+        - Name: BatchID
+          Type: StoreColumn
+          DataType: String
+        - Name: Downtime
+          Type: StoreColumn
+          DataType: Float
+        - Name: DowntimeCode
+          Type: StoreColumn
+          DataType: Int32
+        - Name: BadCut
+          Type: StoreColumn
+          DataType: Int32
+        - Name: BadCutCode
+          Type: StoreColumn
+          DataType: Int32
+  - Name: Type
+    Type: PropertyType
+    DataType: DBMSType
+    Value: 2
+  - Name: Username
+    Type: PropertyType
+    DataType: String
+    Value: "sa"
+  - Name: Password
+    Type: PropertyType
+    DataType: Password
+    Value: "1234"
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=9;i=22
+  - Class: Reference
+    Target: ns=9;i=6
+  - Class: Reference
+    Target: ns=9;i=8
+  - Class: Reference
+    Target: ns=9;i=25
+  - Class: Reference
+    Target: ns=9;i=38
+  - Class: Reference
+    Target: ns=9;i=41
+  - Class: Reference
+    Target: ns=9;i=44
+  - Class: Reference
+    Target: ns=9;i=53
+  - Class: Reference
+    Target: ns=9;i=55
+  - Class: Reference
+    Target: ns=9;i=57
+  - Class: Reference
+    Target: ns=9;i=59
+  - Name: DSN
+    Type: PropertyType
+    DataType: String
+    Value: "DemoOptix"
+  - Name: SFEnabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: SFBufferMaxSize
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1000
+  - Name: SFBufferUsage
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: SFBufferOverflow
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+  - Name: InsertPeriodic
+    Id: g=a6942f4da77017ad9327d207fbaea96f
+    Type: NetLogic
+    Children:
+    - Class: Method
+      Name: DeltaDatabaseBadProduct
+    - Class: Method
+      Name: DeltaDatabasePeriodic
+    - Class: Method
+      Name: DeltaDatabaseStopping
+    - Class: Method
+      Name: MitsuDatabaseBadProduct
+    - Class: Method
+      Name: MitsuDatabasePeriodic
+    - Class: Method
+      Name: MitsuDatabaseStopping
+    - Class: Method
+      Name: RockwellDatabaseBadProduct
+    - Class: Method
+      Name: RockwellDatabasePeriodic
+    - Class: Method
+      Name: RockwellDatabaseStopping
+    - Class: Method
+      Name: ScanTrigger
+    - Class: Method
+      Name: Select2
+      Children:
+      - Name: ns=0;OutputArguments
+        Type: BaseVariableType
+        DataType: Argument
+        ReferenceType: HasProperty
+        ValueRank: OneDimension
+        ArrayDimensions: [0]
+        Value: [{"TypeId":{"Id":296},"Body":{"Name":"value","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+    - Class: Method
+      Name: SiemensDatabaseBadProduct
+    - Class: Method
+      Name: SiemensDatabasePeriodic
+    - Class: Method
+      Name: SiemensDatabaseStopping

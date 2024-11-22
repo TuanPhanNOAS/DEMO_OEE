@@ -1,0 +1,150 @@
+Name: Recipes
+Type: RecipesCategoryFolder
+Children:
+- Name: RecipeSchema1
+  Type: RecipeSchema
+  Children:
+  - Name: Root
+    Type: BaseObjectType
+    Children:
+    - Name: MachineID
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: BatchID
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: SampleTime
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: GoodQuantity
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: BadQuantity
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: Uptime
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: DownTime
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: TargetSpeed
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: ActualSpeed
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: Planned Cut
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: TotalCut
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: AverageSpeed
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: ProdNoPerMin
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: BadNoPerMin
+      Type: BaseDataVariableType
+      DataType: Int32
+  - Class: Reference
+    Target: ns=17;i=27
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=33
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=31
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=35
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=37
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=76
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=62
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=58
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=60
+    Direction: Forward
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/DEMO_OEE/DataStores/Machine_Status"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
+  - Name: TargetNode
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"d2bbf5449c70994ee0e308a79abb3462","Namespace":32}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+  - Name: EditModel
+    Id: g=cf550e9c2626416babe828317e4c3d6b
+    Type: BaseObjectType
+    Children:
+    - Name: MachineID
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: BatchID
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: SampleTime
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: GoodQuantity
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: BadQuantity
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: Uptime
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: DownTime
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: TargetSpeed
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: ActualSpeed
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: Planned Cut
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: TotalCut
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: AverageSpeed
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: ProdNoPerMin
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: BadNoPerMin
+      Type: BaseDataVariableType
+      DataType: Int32

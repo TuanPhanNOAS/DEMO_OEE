@@ -1,0 +1,19 @@
+Name: MachineID
+Type: FolderType
+Children:
+- Name: Machine_ID_Rockwell
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 100
+- Name: Machine_ID_Siemens
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 200
+- Name: Machine_ID_Delta
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 300
+- Name: Machine_ID_Mitsubishi
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 400

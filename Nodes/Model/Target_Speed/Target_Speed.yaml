@@ -1,0 +1,19 @@
+Name: Target_Speed
+Type: FolderType
+Children:
+- Name: Target_Speed_Rockwell
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 60
+- Name: Target_Speed_Siemens
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 60
+- Name: Target_Speed_Delta
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 60
+- Name: Target_Speed_Mitsu
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 60

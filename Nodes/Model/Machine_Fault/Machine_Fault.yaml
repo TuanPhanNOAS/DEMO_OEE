@@ -1,0 +1,187 @@
+Name: Machine_Fault
+Type: FolderType
+Children:
+- Class: DataType
+  Name: FaultErrorCode_Rockwell
+  Id: g=2587f3b10fb11cbec1d970916cbf7318
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "FaultErrorCode_Rockwell",
+    "DataType": {
+     "IdType": 2,
+     "Id": "2587f3b10fb11cbec1d970916cbf7318",
+     "Namespace": 32
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 103,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "103"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 104,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "104"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 105,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "105"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":103,"DisplayName":{"LocaleId":"en-US","Text":"103"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":104,"DisplayName":{"LocaleId":"en-US","Text":"104"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":105,"DisplayName":{"LocaleId":"en-US","Text":"105"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Class: DataType
+  Name: FaultErrorCode_Siemens
+  Id: g=56379574ff6254d5c023a8626b1eb7cf
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "FaultErrorCode_Siemens",
+    "DataType": {
+     "IdType": 2,
+     "Id": "56379574ff6254d5c023a8626b1eb7cf",
+     "Namespace": 32
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 203,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "203"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 204,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "204"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 205,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "205"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":203,"DisplayName":{"LocaleId":"en-US","Text":"203"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":204,"DisplayName":{"LocaleId":"en-US","Text":"204"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":205,"DisplayName":{"LocaleId":"en-US","Text":"205"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Class: DataType
+  Name: FaultErrorCode_Delta
+  Id: g=07c65f6d09e1b02520e80f21804e9647
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "FaultErrorCode_Delta",
+    "DataType": {
+     "IdType": 2,
+     "Id": "07c65f6d09e1b02520e80f21804e9647",
+     "Namespace": 32
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 303,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "303"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 304,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "304"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 305,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "305"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":303,"DisplayName":{"LocaleId":"en-US","Text":"303"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":304,"DisplayName":{"LocaleId":"en-US","Text":"304"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":305,"DisplayName":{"LocaleId":"en-US","Text":"305"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Class: DataType
+  Name: FaultErrorCode_Mitsubishi
+  Id: g=98feb55f338f7e95765f42bdae5aa9a2
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "FaultErrorCode_Mitsubishi",
+    "DataType": {
+     "IdType": 2,
+     "Id": "98feb55f338f7e95765f42bdae5aa9a2",
+     "Namespace": 32
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 403,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "403"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 404,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "404"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 405,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "405"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":403,"DisplayName":{"LocaleId":"en-US","Text":"403"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":404,"DisplayName":{"LocaleId":"en-US","Text":"404"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":405,"DisplayName":{"LocaleId":"en-US","Text":"405"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Name: FaultErrorCode_Output_Rockwell
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: FaultErrorCode_Output_Siemens
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: FaultErrorCode_Output_Delta
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: FaultErrorCode_Output_Mitsubishi
+  Type: BaseDataVariableType
+  DataType: Int32

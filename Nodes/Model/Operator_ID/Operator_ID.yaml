@@ -1,0 +1,243 @@
+Name: Operator_ID
+Type: FolderType
+Children:
+- Class: DataType
+  Name: Oper_ID_Rockwell
+  Id: g=d56d85b6d0ee808de79337fd00b3ed5c
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "Oper_ID_Rockwell",
+    "DataType": {
+     "IdType": 2,
+     "Id": "d56d85b6d0ee808de79337fd00b3ed5c",
+     "Namespace": 32
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 1001,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "1001"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1002,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "1002"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 1003,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "1003"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 1004,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "1004"
+      }
+     },{
+      "Name": "Value4",
+      "Value": 1005,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "1005"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":1001,"DisplayName":{"LocaleId":"en-US","Text":"1001"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1002,"DisplayName":{"LocaleId":"en-US","Text":"1002"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1003,"DisplayName":{"LocaleId":"en-US","Text":"1003"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1004,"DisplayName":{"LocaleId":"en-US","Text":"1004"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1005,"DisplayName":{"LocaleId":"en-US","Text":"1005"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Name: Oper_ID_Rockwell_Output
+  Type: BaseDataVariableType
+  DataType: Int32
+- Class: DataType
+  Name: Oper_ID_Siemens
+  Id: g=adf395644219e4585add16ebf7d170cf
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "Oper_ID_Siemens",
+    "DataType": {
+     "IdType": 2,
+     "Id": "adf395644219e4585add16ebf7d170cf",
+     "Namespace": 32
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 1001,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "1001"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1002,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "1002"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 1003,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "1003"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 1004,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "1004"
+      }
+     },{
+      "Name": "Value4",
+      "Value": 1005,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "1005"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":1001,"DisplayName":{"LocaleId":"en-US","Text":"1001"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1002,"DisplayName":{"LocaleId":"en-US","Text":"1002"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1003,"DisplayName":{"LocaleId":"en-US","Text":"1003"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1004,"DisplayName":{"LocaleId":"en-US","Text":"1004"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1005,"DisplayName":{"LocaleId":"en-US","Text":"1005"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Name: Oper_ID_Siemens_Output
+  Type: BaseDataVariableType
+  DataType: Int32
+- Class: DataType
+  Name: Oper_ID_Delta
+  Id: g=d060c5248c6f73b7d4618717feea22e3
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "Oper_ID_Delta",
+    "DataType": {
+     "IdType": 2,
+     "Id": "d060c5248c6f73b7d4618717feea22e3",
+     "Namespace": 32
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 1001,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "1001"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1002,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "1002"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 1003,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "1003"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 1004,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "1004"
+      }
+     },{
+      "Name": "Value4",
+      "Value": 1005,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "1005"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":1001,"DisplayName":{"LocaleId":"en-US","Text":"1001"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1002,"DisplayName":{"LocaleId":"en-US","Text":"1002"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1003,"DisplayName":{"LocaleId":"en-US","Text":"1003"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1004,"DisplayName":{"LocaleId":"en-US","Text":"1004"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1005,"DisplayName":{"LocaleId":"en-US","Text":"1005"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Name: Oper_ID_Delta_Output
+  Type: BaseDataVariableType
+  DataType: Int32
+- Class: DataType
+  Name: Oper_ID_Mitsu
+  Id: g=bb669ac7728cd06c2f8c831142e03486
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "Oper_ID_Mitsu",
+    "DataType": {
+     "IdType": 2,
+     "Id": "bb669ac7728cd06c2f8c831142e03486",
+     "Namespace": 32
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 1001,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "1001"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1002,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "1002"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 1003,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "1003"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 1004,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "1004"
+      }
+     },{
+      "Name": "Value4",
+      "Value": 1005,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "1004"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":1001,"DisplayName":{"LocaleId":"en-US","Text":"1001"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1002,"DisplayName":{"LocaleId":"en-US","Text":"1002"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1003,"DisplayName":{"LocaleId":"en-US","Text":"1003"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1004,"DisplayName":{"LocaleId":"en-US","Text":"1004"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1005,"DisplayName":{"LocaleId":"en-US","Text":"1004"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Name: Oper_ID_Mitsu_Output
+  Type: BaseDataVariableType
+  DataType: Int32

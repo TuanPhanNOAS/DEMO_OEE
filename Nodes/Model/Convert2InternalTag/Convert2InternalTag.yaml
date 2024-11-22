@@ -1,0 +1,7 @@
+Name: Convert2InternalTag
+Type: FolderType
+Children:
+- File: Siemens/Siemens.yaml
+- File: Delta/Delta.yaml
+- File: Mitsu/Mitsu.yaml
+- File: Rockwell/Rockwell.yaml

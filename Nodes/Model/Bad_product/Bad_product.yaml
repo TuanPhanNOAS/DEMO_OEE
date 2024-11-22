@@ -1,0 +1,279 @@
+Name: Bad_product
+Type: FolderType
+Children:
+- Class: DataType
+  Name: BadErrorCode_Rockwell
+  Id: g=8fe244d596c30b79ecdc1699abbbcaa7
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "BadErrorCode_Rockwell",
+    "DataType": {
+     "IdType": 2,
+     "Id": "8fe244d596c30b79ecdc1699abbbcaa7",
+     "Namespace": 32
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 101,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "101"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 102,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "102"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":101,"DisplayName":{"LocaleId":"en-US","Text":"101"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":102,"DisplayName":{"LocaleId":"en-US","Text":"102"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Name: BadErrorCode_Output_Rockwell
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: BadCode_Rockwell
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
+    Children:
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "{0}*{1}"
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../BadErrorCode_Output_Rockwell"
+    - Name: ns=3;Source1
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../CommDrivers/Micro1400/ModbusStation1/Tags/SimBadLatch"
+- Class: DataType
+  Name: BadErrorCode_Siemens
+  Id: g=bda3f384e01b1ac19ac50df3ce27a101
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "BadErrorCode_Siemens",
+    "DataType": {
+     "IdType": 2,
+     "Id": "bda3f384e01b1ac19ac50df3ce27a101",
+     "Namespace": 32
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 201,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "201"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 202,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "202"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":201,"DisplayName":{"LocaleId":"en-US","Text":"201"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":202,"DisplayName":{"LocaleId":"en-US","Text":"202"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Name: BadErrorCode_Output_Siemens
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: BadCode_Siemens
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
+    Children:
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "{0}*{1}"
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../BadErrorCode_Output_Siemens"
+    - Name: ns=3;Source1
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../CommDrivers/SiemensPLC/S7TIAPROFINETStation1/Tags/PLC/Table/Sim_Time"
+- Class: DataType
+  Name: BadErrorCode_Delta
+  Id: g=4a8ac002e5fa5c5e8de5935f71e4e66b
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "BadErrorCode_Delta",
+    "DataType": {
+     "IdType": 2,
+     "Id": "4a8ac002e5fa5c5e8de5935f71e4e66b",
+     "Namespace": 32
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 301,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "301"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 302,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "302"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":301,"DisplayName":{"LocaleId":"en-US","Text":"301"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":302,"DisplayName":{"LocaleId":"en-US","Text":"302"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Name: BadErrorCode_Output_Delta
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: BadCode_Delta
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
+    Children:
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "{0}*{1}"
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../BadErrorCode_Output_Delta"
+    - Name: ns=3;Source1
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../CommDrivers/DeltaPLC_Modbus/delta/Tags/Simbad_Latch"
+- Class: DataType
+  Name: BadErrorCode_Mitsu
+  Id: g=3c72edff01ea99d540acebc3a10ea9ec
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "BadErrorCode_Mitsu",
+    "DataType": {
+     "IdType": 2,
+     "Id": "3c72edff01ea99d540acebc3a10ea9ec",
+     "Namespace": 32
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 401,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "401"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 402,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "402"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":401,"DisplayName":{"LocaleId":"en-US","Text":"401"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":402,"DisplayName":{"LocaleId":"en-US","Text":"402"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Name: BadErrorCode_Output_Mitsu
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: BadCode_Mitsu
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
+    Children:
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "{0}*{1}"
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../BadErrorCode_Output_Mitsu"
+    - Name: ns=3;Source1
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../CommDrivers/MitsuPLC/MELSECQStation1/Tags/Sim_Bad_Prod_Latch"

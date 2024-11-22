@@ -1,0 +1,19 @@
+Name: Converters
+Type: ConvertersCategoryFolder
+Children:
+- Name: EngineeringUnitDictionary1
+  Type: EngineeringUnitDictionary
+  DataType: EngineeringUnitDictionaryItem
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+  Value: [{"TypeId":{"Id":239,"Namespace":1},"Body":{"UnitId":0,"DisplayName":{"LocaleId":"en-US","Text":"Prod/Min"},"Description":{"LocaleId":"en-US","Text":"Prod/Min"},"PhysicalDimension":12,"Slope":1.0,"Intercept":0.0}}]
+- Name: StringFormatter1
+  Id: g=2162ba2537f5330bacd07f58713e7878
+  Supertype: StringFormatter
+  ReferenceType: HasComponent
+  Children:
+  - Name: Mode
+    Type: PropertyType
+    DataType: DynamicLinkMode
+    ReferenceType: HasComponent
+    ModellingRule: Optional

@@ -1,0 +1,294 @@
+Name: Tags
+Type: FolderType
+Children:
+- Name: Good_Prod
+  Type: ModbusTag
+  DataType: Int16
+  Children:
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 1
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Bad_Prod
+  Type: ModbusTag
+  DataType: Int16
+  Children:
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Insert_Bad
+  Type: ModbusTag
+  DataType: Int16
+  Children:
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 4
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseDataVariableType
+      DataType: Double
+    - Name: High
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 100.0
+    - Name: Constrain
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+- Name: Total_Prod
+  Type: ModbusTag
+  DataType: Int16
+  Children:
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 5
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Sec_Up
+  Type: ModbusTag
+  DataType: Int16
+  Children:
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 7
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Min_Up
+  Type: ModbusTag
+  DataType: Int16
+  Children:
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 8
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Hour_Up
+  Type: ModbusTag
+  DataType: Int16
+  Children:
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 9
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Sec_Down
+  Type: ModbusTag
+  DataType: Int16
+  Children:
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 10
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Min_Down
+  Type: ModbusTag
+  DataType: Int16
+  Children:
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 11
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Hour_Down
+  Type: ModbusTag
+  DataType: Int16
+  Children:
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 12
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Planed_Cut
+  Type: ModbusTag
+  DataType: Int16
+  Children:
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 6
+  - Name: BitOffset
+    Type: BaseDataVariableType
+    DataType: UInt32
+- Name: Alarm_Visible
+  Type: ModbusTag
+  DataType: Boolean
+  Children:
+  - Name: ArrayUpdateMode
+    Type: BaseDataVariableType
+    DataType: TagArrayUpdateMode
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 1
+  - Name: NumCoil
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 6
+- Name: Shift_1
+  Type: ModbusTag
+  DataType: Int16
+  Children:
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 14
+- Name: Shift_2
+  Type: ModbusTag
+  DataType: Int16
+  Children:
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 15
+- Name: Shift_3
+  Type: ModbusTag
+  DataType: Int16
+  Children:
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 16
+- Name: Average_Speed
+  Type: ModbusTag
+  DataType: Int16
+  Children:
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 18
+- Name: Pro_Sim
+  Type: ModbusTag
+  DataType: Int16
+  Children:
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseDataVariableType
+      DataType: Double
+    - Name: High
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 60.0
+    - Name: Constrain
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+- Name: Sample Time
+  Type: ModbusTag
+  DataType: Int16
+  Children:
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 17
+- Name: stop
+  Type: ModbusTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 1
+- Name: start
+  Type: ModbusTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 1
+  - Name: NumCoil
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 16
+- Name: Run
+  Type: ModbusTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 1
+  - Name: NumCoil
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 18
+- Name: SimBad
+  Type: ModbusTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 1
+  - Name: NumCoil
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 1
+- Name: SimBadLatch
+  Type: ModbusTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 1
+  - Name: NumCoil
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 19
+- Name: Machine_failed
+  Id: g=7a3a76d6c90a4a1e67f51152b1a64dcf
+  Type: ModbusTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 1
+  - Name: NumCoil
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 4
+- Name: Batch_Complete
+  Type: ModbusTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 1
+  - Name: NumCoil
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 21

@@ -1,0 +1,19 @@
+Name: BatchID
+Type: FolderType
+Children:
+- Name: Batch_ID_Rockwell
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 111
+- Name: Batch_ID_Siemens
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 222
+- Name: Batch_ID_Delta
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 333
+- Name: Batch_ID_Mitsubishi
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 444

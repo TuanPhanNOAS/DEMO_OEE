@@ -1,0 +1,3288 @@
+Name: Alarms
+Id: g=3293e7cd8de0bb06cc725e017a984470
+Type: AlarmsCategoryFolder
+Children:
+- File: Template/Template.yaml
+- Name: Bad Product Rockwell 1
+  Id: g=1bb82150480db8a17d6b9af19db1dceb
+  Type: DigitalAlarm_withArea
+  Children:
+  - Class: Reference
+    Target: ns=19;i=81
+  - Class: Reference
+    Target: ns=19;i=82
+  - Class: Reference
+    Target: ns=19;i=83
+  - Class: Reference
+    Target: ns=19;i=130
+  - Class: Reference
+    Target: ns=19;i=135
+  - Class: Reference
+    Target: ns=19;i=132
+  - Class: Reference
+    Target: ns=19;i=146
+  - Class: Reference
+    Target: ns=19;i=148
+  - Class: Reference
+    Target: ns=19;i=150
+  - Class: Reference
+    Target: ns=19;i=152
+  - Class: Reference
+    Target: ns=19;i=154
+  - Class: Reference
+    Target: ns=19;i=81
+  - Class: Reference
+    Target: ns=19;i=82
+  - Class: Reference
+    Target: ns=19;i=83
+  - Name: NormalStateValue
+    Id: g=80d50067a824562f28e87291a7234782
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=db1804fd8a269558e21db609b77bec60
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: ExpressionEvaluator1
+      Id: g=1b5156e4f25bbe3c48958afb6ac50362
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Id: g=cd662ab07ea83232b4debe4967657b14
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        Value: "{0}&({1}==101)"
+      - Name: ns=3;Source0
+        Id: g=cbf49c9282dde0f81728e460a32b6a7d
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=ac57e281d94c1cfbd94805d6d3f54047
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/Micro1400/ModbusStation1/Tags/SimBadLatch"
+      - Name: ns=3;Source1
+        Id: g=770a116f2fd88ac6ca8ba781c8beed0c
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=0ffe4e749453a7e34ae3f1ed8ecd1ff8
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Bad_product/BadErrorCode_Output_Rockwell"
+  - Name: LastEvent
+    Id: g=4aaa70a1a0a638e23575d4ee6cfacf92
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Area
+    Id: g=8967e3a24ecd15330f84126789219876
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "rockwell"
+  - Class: Reference
+    Target: ns=19;i=130
+  - Class: Reference
+    Target: ns=19;i=132
+  - Class: Reference
+    Target: ns=19;i=135
+  - Class: Reference
+    Target: ns=19;i=146
+  - Class: Reference
+    Target: ns=19;i=148
+  - Class: Reference
+    Target: ns=19;i=150
+  - Class: Reference
+    Target: ns=19;i=152
+  - Class: Reference
+    Target: ns=19;i=154
+  - Name: Message
+    Id: g=3031985aee86acebae9460f5d5061b35
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: StringFormatter1
+      Id: g=fd1baba3767419f2756445cf1cccad83
+      Type: StringFormatter
+      Children:
+      - Name: Format
+        Id: g=80b77d8cf1e8a80f02b08bafcea66fa3
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        Value: {"LocaleId":"en-US","Text":"{0} Bad product in Rockwell PLC Machine( Error code = {1})"}
+      - Name: ns=3;Source0
+        Id: g=c7971cbf007c0493cab8ded91ae7509c
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=2bb881610d964a8039d02cca60666590
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/Micro1400/ModbusStation1/Tags/Insert_Bad"
+          Children:
+          - Name: IsPull
+            Id: g=2d678d8fc66a44e3ae4f2b51e75eb694
+            Type: BaseVariableType
+            DataType: Boolean
+            Value: true
+      - Name: IsPull
+        Id: g=a70ae6d531bb430801b8d2915010f26f
+        Type: PropertyType
+        DataType: Boolean
+        ReferenceType: HasComponent
+        Value: true
+      - Name: ns=3;Source1
+        Id: g=b5d2c5a040e764493360c7b8db07e939
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=d2c87e992ab5010aebff1245ca292509
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Bad_product/BadErrorCode_Output_Rockwell@Value"
+          Children:
+          - Name: IsPull
+            Id: g=45e311bc34d7d8edc2112e6ee048d7f5
+            Type: BaseVariableType
+            DataType: Boolean
+            Value: true
+  - Name: AutoAcknowledge
+    Id: g=359bbfb70132f24da99b9f326837ccfa
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: AutoConfirm
+    Id: g=093b5a9ba204da393154e5351aa85340
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: Bad Product Rockwell 2
+  Id: g=b64678fd0fece3a33d44a4e58b3ad13a
+  Type: DigitalAlarm_withArea
+  Children:
+  - Class: Reference
+    Target: ns=19;i=81
+  - Class: Reference
+    Target: ns=19;i=82
+  - Class: Reference
+    Target: ns=19;i=83
+  - Class: Reference
+    Target: ns=19;i=130
+  - Class: Reference
+    Target: ns=19;i=135
+  - Class: Reference
+    Target: ns=19;i=132
+  - Class: Reference
+    Target: ns=19;i=146
+  - Class: Reference
+    Target: ns=19;i=148
+  - Class: Reference
+    Target: ns=19;i=150
+  - Class: Reference
+    Target: ns=19;i=152
+  - Class: Reference
+    Target: ns=19;i=154
+  - Class: Reference
+    Target: ns=19;i=81
+  - Class: Reference
+    Target: ns=19;i=82
+  - Class: Reference
+    Target: ns=19;i=83
+  - Name: NormalStateValue
+    Id: g=253b2c4d13e1c1d0673ee2fd4f8ca0a4
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=d98f43f5a55066e20195c0d68c943ccf
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: ExpressionEvaluator1
+      Id: g=ef4b301351eca1afb8f383ba882e8f25
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Id: g=af6d9cfca1f9c735f6cc4b46ccbdbb80
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        Value: "{0}&({1}==102)"
+      - Name: ns=3;Source0
+        Id: g=c39dba888df68a4fd556a4429ac15c6b
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=42bdd27d7b270a127c18a730270bc270
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/Micro1400/ModbusStation1/Tags/SimBadLatch"
+      - Name: ns=3;Source1
+        Id: g=0ff957c6d1368d865edd7a09ed8646be
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=d1cb086092fcd2657b3ded2330910e5a
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Bad_product/BadErrorCode_Output_Rockwell"
+  - Name: LastEvent
+    Id: g=b1502b205100d4afb25814e99d184b9a
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Area
+    Id: g=c081f369256c298be42a237385907a9d
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "rockwell"
+  - Class: Reference
+    Target: ns=19;i=130
+  - Class: Reference
+    Target: ns=19;i=132
+  - Class: Reference
+    Target: ns=19;i=135
+  - Class: Reference
+    Target: ns=19;i=146
+  - Class: Reference
+    Target: ns=19;i=148
+  - Class: Reference
+    Target: ns=19;i=150
+  - Class: Reference
+    Target: ns=19;i=152
+  - Class: Reference
+    Target: ns=19;i=154
+  - Name: Message
+    Id: g=f1902a84e745bb4beffaf1b8e210bea0
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: StringFormatter1
+      Id: g=adf735805052a8620ca3b9e64d28f496
+      Type: StringFormatter
+      Children:
+      - Name: Format
+        Id: g=77cbbbd984d6c189cb24e3d476798462
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        Value: {"LocaleId":"en-US","Text":"{0} Bad product in Rockwell PLC Machine( Error code = {1})"}
+      - Name: ns=3;Source0
+        Id: g=0108eb10ff65d505c74cb34de82aa685
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=fcae874c908f800361f3b0b73f3ca763
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/Micro1400/ModbusStation1/Tags/Insert_Bad"
+          Children:
+          - Name: IsPull
+            Id: g=ff7a104b4f525e33d93cf013d452a89b
+            Type: BaseVariableType
+            DataType: Boolean
+            Value: true
+      - Name: IsPull
+        Id: g=7af88fd7a76e649d8a7667dead570442
+        Type: PropertyType
+        DataType: Boolean
+        ReferenceType: HasComponent
+        Value: true
+      - Name: ns=3;Source1
+        Id: g=2d69ddbe731ce2ac1ec114af6e9e31d0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=1e19361491c022145053c40daebad980
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Bad_product/BadErrorCode_Output_Rockwell@Value"
+          Children:
+          - Name: IsPull
+            Id: g=517c6a0b9c20e91961940ec1de916a10
+            Type: BaseVariableType
+            DataType: Boolean
+            Value: true
+  - Name: AutoAcknowledge
+    Id: g=233cef639b3c8144220fd0372c462918
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: AutoConfirm
+    Id: g=8923065cb9c14b2ce1b000bc2856c92e
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: Machine Failed Rockwell 1
+  Id: g=b9b98b8a3a9cb80d5792275ab4d9d6f5
+  Type: DigitalAlarm_withArea
+  Children:
+  - Class: Reference
+    Target: ns=19;i=81
+  - Class: Reference
+    Target: ns=19;i=82
+  - Class: Reference
+    Target: ns=19;i=83
+  - Class: Reference
+    Target: ns=19;i=130
+  - Class: Reference
+    Target: ns=19;i=135
+  - Class: Reference
+    Target: ns=19;i=132
+  - Class: Reference
+    Target: ns=19;i=146
+  - Class: Reference
+    Target: ns=19;i=148
+  - Class: Reference
+    Target: ns=19;i=150
+  - Class: Reference
+    Target: ns=19;i=152
+  - Class: Reference
+    Target: ns=19;i=154
+  - Class: Reference
+    Target: ns=19;i=81
+  - Class: Reference
+    Target: ns=19;i=82
+  - Class: Reference
+    Target: ns=19;i=83
+  - Name: NormalStateValue
+    Id: g=c5e51316f0c2c1ce4f306d5a4ac45921
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=ab94c44d5413cefdf2eedbccc4ce1e18
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: ExpressionEvaluator1
+      Id: g=e42bc8664e3aab8fbf9b4c99fdee8016
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Id: g=9ad6496727e25d1e6d5521c301c72f2a
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        Value: "{0}&({1}==103)"
+      - Name: ns=3;Source0
+        Id: g=d56c63b175e872b3975234f6a4407e0f
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=1e07d762a20b00cdcb2d824ea9bf4090
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/Micro1400/ModbusStation1/Tags/Machine_failed"
+      - Name: ns=3;Source1
+        Id: g=dc3ca3bad4c89e1c0d352cbd3c0548e0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=92f4555371c8b8e7c87573e734aaf4e1
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Machine_Fault/FaultErrorCode_Output_Rockwell"
+  - Name: LastEvent
+    Id: g=32b14388b19199ea72fc2188be7de6d0
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Area
+    Id: g=023b9f24df233c2148b342c0100a54a0
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "rockwell"
+  - Class: Reference
+    Target: ns=19;i=130
+  - Class: Reference
+    Target: ns=19;i=132
+  - Class: Reference
+    Target: ns=19;i=135
+  - Class: Reference
+    Target: ns=19;i=146
+  - Class: Reference
+    Target: ns=19;i=148
+  - Class: Reference
+    Target: ns=19;i=150
+  - Class: Reference
+    Target: ns=19;i=152
+  - Class: Reference
+    Target: ns=19;i=154
+  - Name: Message
+    Id: g=122616c4683cb0c119b3d8b733013e8a
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: StringFormatter1
+      Id: g=9f8920acd7c157b540752fb251f0ebf9
+      Type: StringFormatter
+      Children:
+      - Name: Format
+        Id: g=c7d3f68c58d5f8436ee0524c8c43141c
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        Value: {"LocaleId":"en-US","Text":"Rockwell PLC Machine Stoped( Error code = {1})"}
+      - Name: IsPull
+        Id: g=c2c70d48d5c2bd9ab8143581a41306ce
+        Type: PropertyType
+        DataType: Boolean
+        ReferenceType: HasComponent
+        Value: true
+      - Name: ns=3;Source1
+        Id: g=266aeac89e58352ab5670813b3813539
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=5214f811c1d0301374f0e8184e45f32c
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Machine_Fault/FaultErrorCode_Output_Rockwell@Value"
+          Children:
+          - Name: IsPull
+            Id: g=96b1180b90f617bd244cc8540973a8dd
+            Type: BaseVariableType
+            DataType: Boolean
+            Value: true
+  - Name: AutoAcknowledge
+    Id: g=c4fe9f3bd11fff67e836d3f5be2d110d
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: AutoConfirm
+    Id: g=2dba84e008c24b7dcc901be2eb4729c0
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: Machine Failed Rockwell 2
+  Id: g=a5f22a086290fccb1a89be56f361c299
+  Type: DigitalAlarm_withArea
+  Children:
+  - Class: Reference
+    Target: ns=19;i=81
+  - Class: Reference
+    Target: ns=19;i=82
+  - Class: Reference
+    Target: ns=19;i=83
+  - Class: Reference
+    Target: ns=19;i=130
+  - Class: Reference
+    Target: ns=19;i=135
+  - Class: Reference
+    Target: ns=19;i=132
+  - Class: Reference
+    Target: ns=19;i=146
+  - Class: Reference
+    Target: ns=19;i=148
+  - Class: Reference
+    Target: ns=19;i=150
+  - Class: Reference
+    Target: ns=19;i=152
+  - Class: Reference
+    Target: ns=19;i=154
+  - Class: Reference
+    Target: ns=19;i=81
+  - Class: Reference
+    Target: ns=19;i=82
+  - Class: Reference
+    Target: ns=19;i=83
+  - Name: NormalStateValue
+    Id: g=224cab866a9e3b0be4a6aea3302a4774
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=4abd88ac6c5f7af1828e637190a434cb
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: ExpressionEvaluator1
+      Id: g=cd49e6cd248cdd500a01486da1a2d2c8
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Id: g=ee810a76ed98bcb955c0d5b2916f4299
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        Value: "{0}&({1}==104)"
+      - Name: ns=3;Source0
+        Id: g=16baa29ff59165186d957699c137e00f
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=3ae957942acdb69e556024cbeab56965
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/Micro1400/ModbusStation1/Tags/Machine_failed"
+      - Name: ns=3;Source1
+        Id: g=70529f65c066c33d828e343c11926806
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=21dfac39d9b377ef7f3f664819be5247
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Machine_Fault/FaultErrorCode_Output_Rockwell"
+  - Name: LastEvent
+    Id: g=06f4924cd84e03bff9a54fe0eb76c96e
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Area
+    Id: g=953f1f24428fa0619a0abd33a06b5f60
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "rockwell"
+  - Class: Reference
+    Target: ns=19;i=130
+  - Class: Reference
+    Target: ns=19;i=132
+  - Class: Reference
+    Target: ns=19;i=135
+  - Class: Reference
+    Target: ns=19;i=146
+  - Class: Reference
+    Target: ns=19;i=148
+  - Class: Reference
+    Target: ns=19;i=150
+  - Class: Reference
+    Target: ns=19;i=152
+  - Class: Reference
+    Target: ns=19;i=154
+  - Name: Message
+    Id: g=f22746088a6170e4999e827b4e43b93c
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: StringFormatter1
+      Id: g=2ac7eef80926208b895043e33632a6ba
+      Type: StringFormatter
+      Children:
+      - Name: Format
+        Id: g=69512a1ff89db9cc59c6022caa158358
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        Value: {"LocaleId":"en-US","Text":"Rockwell PLC Machine Stoped( Error code = {1})"}
+      - Name: IsPull
+        Id: g=3b0defa2a2138b45d68cfa6f75897a4c
+        Type: PropertyType
+        DataType: Boolean
+        ReferenceType: HasComponent
+        Value: true
+      - Name: ns=3;Source1
+        Id: g=469448985620e9db230c6b74a1189400
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=0346dffc877dd6bcedd9c3bbd2d3e072
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Machine_Fault/FaultErrorCode_Output_Rockwell@Value"
+          Children:
+          - Name: IsPull
+            Id: g=39b8674eadc5fcc57dc3ad74c8392d9b
+            Type: BaseVariableType
+            DataType: Boolean
+            Value: true
+  - Name: AutoAcknowledge
+    Id: g=0ad878aaa3005a1f0aef115d2f169267
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: AutoConfirm
+    Id: g=e756fdb7121c1539776ad42a2df7813c
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: Machine Failed Rockwell 3
+  Id: g=78ae0d1f374566090f5f8bf6dbbd5f9d
+  Type: DigitalAlarm_withArea
+  Children:
+  - Class: Reference
+    Target: ns=19;i=81
+  - Class: Reference
+    Target: ns=19;i=82
+  - Class: Reference
+    Target: ns=19;i=83
+  - Class: Reference
+    Target: ns=19;i=130
+  - Class: Reference
+    Target: ns=19;i=135
+  - Class: Reference
+    Target: ns=19;i=132
+  - Class: Reference
+    Target: ns=19;i=146
+  - Class: Reference
+    Target: ns=19;i=148
+  - Class: Reference
+    Target: ns=19;i=150
+  - Class: Reference
+    Target: ns=19;i=152
+  - Class: Reference
+    Target: ns=19;i=154
+  - Class: Reference
+    Target: ns=19;i=81
+  - Class: Reference
+    Target: ns=19;i=82
+  - Class: Reference
+    Target: ns=19;i=83
+  - Name: NormalStateValue
+    Id: g=c5bdb2af595dc8d7ffdd3de1d038dec5
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=6d6b3d071744ea86c610e2a4bf234842
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: ExpressionEvaluator1
+      Id: g=9335bf17c7b6f2f7bb38b0fb6fc5d257
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Id: g=73a69bb04046f22c968af6746a4a2e28
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        Value: "{0}&({1}==105)"
+      - Name: ns=3;Source0
+        Id: g=bb9a77115049a66f49052bbd8424dd5a
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=0578df52103fb72c59fc50e3c973b90d
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/Micro1400/ModbusStation1/Tags/Machine_failed"
+      - Name: ns=3;Source1
+        Id: g=4e1cca7d8dd1877a5763e8bc7eef9079
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=d9964f0879c2541a51227d39952bdbf9
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Machine_Fault/FaultErrorCode_Output_Rockwell"
+  - Name: LastEvent
+    Id: g=77a066a64e6a7c12d1432278643993a6
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Area
+    Id: g=e3aa00c5da59a5fe4b00bdd36ad24391
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "rockwell"
+  - Class: Reference
+    Target: ns=19;i=130
+  - Class: Reference
+    Target: ns=19;i=132
+  - Class: Reference
+    Target: ns=19;i=135
+  - Class: Reference
+    Target: ns=19;i=146
+  - Class: Reference
+    Target: ns=19;i=148
+  - Class: Reference
+    Target: ns=19;i=150
+  - Class: Reference
+    Target: ns=19;i=152
+  - Class: Reference
+    Target: ns=19;i=154
+  - Name: Message
+    Id: g=1829cec66a011839918d95fcfd0cf80f
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: StringFormatter1
+      Id: g=1559a910c46efcc23601952c654566bb
+      Type: StringFormatter
+      Children:
+      - Name: Format
+        Id: g=afe839f0ff6ed4f799fdf8be4c0e8146
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        Value: {"LocaleId":"en-US","Text":"Rockwell PLC Machine Stoped( Error code = {1})"}
+      - Name: IsPull
+        Id: g=608c2c912dd4a35172330fba40954d29
+        Type: PropertyType
+        DataType: Boolean
+        ReferenceType: HasComponent
+        Value: true
+      - Name: ns=3;Source1
+        Id: g=a35c2e8131cd1cedf8900655ae134e30
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=93526974dcf8c278562d01df7616e41a
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Machine_Fault/FaultErrorCode_Output_Rockwell@Value"
+          Children:
+          - Name: IsPull
+            Id: g=918542128f2984b4db0941a65919244c
+            Type: BaseVariableType
+            DataType: Boolean
+            Value: true
+  - Name: AutoAcknowledge
+    Id: g=9f830fe7dc63149386fc319fab463d88
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: AutoConfirm
+    Id: g=aab21a477a3798aa4c15673e3ccb6165
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: Bad Product Siemens 1
+  Id: g=1f6b5d83212b1cae773c615ce2001ef0
+  Type: DigitalAlarm_withArea
+  Children:
+  - Class: Reference
+    Target: ns=19;i=81
+  - Class: Reference
+    Target: ns=19;i=82
+  - Class: Reference
+    Target: ns=19;i=83
+  - Class: Reference
+    Target: ns=19;i=130
+  - Class: Reference
+    Target: ns=19;i=135
+  - Class: Reference
+    Target: ns=19;i=132
+  - Class: Reference
+    Target: ns=19;i=146
+  - Class: Reference
+    Target: ns=19;i=148
+  - Class: Reference
+    Target: ns=19;i=150
+  - Class: Reference
+    Target: ns=19;i=152
+  - Class: Reference
+    Target: ns=19;i=154
+  - Class: Reference
+    Target: ns=19;i=81
+  - Class: Reference
+    Target: ns=19;i=82
+  - Class: Reference
+    Target: ns=19;i=83
+  - Name: NormalStateValue
+    Id: g=b06d2722facc5aad6bac1076e18232c6
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=d5a2ac0ff15232d1a25819309873929c
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: ExpressionEvaluator1
+      Id: g=fd59d16a27eb8e6e5cad7219f97d5643
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Id: g=f1f3ecb5a66f2a369ab0fa97800ef02c
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        Value: "{0}&({1}==201)"
+      - Name: ns=3;Source0
+        Id: g=c542a9e60da9d7e014ef94f0cee5b922
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=b2d3b7721b35c62babe81631ac63306d
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/SiemensPLC/S7TIAPROFINETStation1/Tags/PLC/Table/Sim_Time"
+      - Name: ns=3;Source1
+        Id: g=1296e7671bd61a035d21462b09f69aef
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=47251fc9d83f9c67aee901402b31ba28
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Bad_product/BadErrorCode_Output_Siemens"
+  - Name: LastEvent
+    Id: g=22c7950c8d17eecb07b4c7843be2b71a
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Area
+    Id: g=e8275561ee19285515a1fe7912119ff1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "siemen"
+  - Class: Reference
+    Target: ns=19;i=130
+  - Class: Reference
+    Target: ns=19;i=132
+  - Class: Reference
+    Target: ns=19;i=135
+  - Class: Reference
+    Target: ns=19;i=146
+  - Class: Reference
+    Target: ns=19;i=148
+  - Class: Reference
+    Target: ns=19;i=150
+  - Class: Reference
+    Target: ns=19;i=152
+  - Class: Reference
+    Target: ns=19;i=154
+  - Name: Message
+    Id: g=af4a48f0a1a0eebdc267bc3455b7f560
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: StringFormatter1
+      Id: g=2662433d647171be05b58458f6922142
+      Type: StringFormatter
+      Children:
+      - Name: Format
+        Id: g=a281f7b6f5ea70fd8d8a5eb87f28e210
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        Value: {"LocaleId":"en-US","Text":"{0} Bad product in Siemens PLC Machine( Error code = {1})"}
+      - Name: ns=3;Source0
+        Id: g=04ace56890313d87bd643c943faeb8e7
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=fcef335161fa953d44219aa50f5d7ab5
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/SiemensPLC/S7TIAPROFINETStation1/Tags/PLC/Table/Insert_Bad"
+          Children:
+          - Name: IsPull
+            Id: g=3acbbe89a4ae0421a9c297eada76ebd9
+            Type: BaseVariableType
+            DataType: Boolean
+            Value: true
+      - Name: IsPull
+        Id: g=4911770e8ff70116d72e64484a0c88ac
+        Type: PropertyType
+        DataType: Boolean
+        ReferenceType: HasComponent
+        Value: true
+      - Name: ns=3;Source1
+        Id: g=38243058af23fedf82dd3e57bb47f0d1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=f2398c6590f0f9f3109d89bb85a6f452
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Bad_product/BadErrorCode_Output_Siemens@Value"
+          Children:
+          - Name: IsPull
+            Id: g=0b5ce37d1960a2fc32e86e65bfccc6dd
+            Type: BaseVariableType
+            DataType: Boolean
+            Value: true
+  - Name: AutoConfirm
+    Id: g=562b8981ae73a7f6fea4ede133d2238f
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: AutoAcknowledge
+    Id: g=513582bbef2b56cfb70d97313d400501
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: Bad Product Siemens 2
+  Id: g=1094f4808251dd0a30eb0c7c8a9c70fe
+  Type: DigitalAlarm_withArea
+  Children:
+  - Class: Reference
+    Target: ns=19;i=81
+  - Class: Reference
+    Target: ns=19;i=82
+  - Class: Reference
+    Target: ns=19;i=83
+  - Class: Reference
+    Target: ns=19;i=130
+  - Class: Reference
+    Target: ns=19;i=135
+  - Class: Reference
+    Target: ns=19;i=132
+  - Class: Reference
+    Target: ns=19;i=146
+  - Class: Reference
+    Target: ns=19;i=148
+  - Class: Reference
+    Target: ns=19;i=150
+  - Class: Reference
+    Target: ns=19;i=152
+  - Class: Reference
+    Target: ns=19;i=154
+  - Class: Reference
+    Target: ns=19;i=81
+  - Class: Reference
+    Target: ns=19;i=82
+  - Class: Reference
+    Target: ns=19;i=83
+  - Name: NormalStateValue
+    Id: g=9f9aed50fe7081cc56a659aaf52bae39
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=d487ad08444b7539b4fc2faf33537f47
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: ExpressionEvaluator1
+      Id: g=c327870ad93d1e1b3d1911e5a1e77327
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Id: g=0b3cf22d81945e188d326ac94f23f80f
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        Value: "{0}&({1}==202)"
+      - Name: ns=3;Source0
+        Id: g=b8cc0eea955ff3f982a05023e6bdd26a
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=2075a1d5602dfdd3a0db716b28af640d
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/SiemensPLC/S7TIAPROFINETStation1/Tags/PLC/Table/Sim_Time"
+      - Name: ns=3;Source1
+        Id: g=e26d1286dff413db61442c879e7858ee
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=e9a91b9ee0d817dec20e2c68543468ef
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Bad_product/BadErrorCode_Output_Siemens"
+  - Name: LastEvent
+    Id: g=4f96d63e03195b08dfc7e4c7fe6119f1
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Area
+    Id: g=25b889fd1b836939202a9cd377af3f83
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "siemen"
+  - Class: Reference
+    Target: ns=19;i=130
+  - Class: Reference
+    Target: ns=19;i=132
+  - Class: Reference
+    Target: ns=19;i=135
+  - Class: Reference
+    Target: ns=19;i=146
+  - Class: Reference
+    Target: ns=19;i=148
+  - Class: Reference
+    Target: ns=19;i=150
+  - Class: Reference
+    Target: ns=19;i=152
+  - Class: Reference
+    Target: ns=19;i=154
+  - Name: Message
+    Id: g=e8832694df7d4330fce148891b03e395
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: StringFormatter1
+      Id: g=ab9c5c1e21eb973ed5e887adb92c1b79
+      Type: StringFormatter
+      Children:
+      - Name: Format
+        Id: g=117d117528cf29e4218c1e5155818d08
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        Value: {"LocaleId":"en-US","Text":"{0} Bad product in Siemens PLC Machine( Error code = {1})"}
+      - Name: ns=3;Source0
+        Id: g=3ebdecc7363305237f41cfa127bd4f9e
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=40b911f4ffa7c1024939df134c5f6481
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/SiemensPLC/S7TIAPROFINETStation1/Tags/PLC/Table/Insert_Bad"
+          Children:
+          - Name: IsPull
+            Id: g=21be78c468261d4d5d3260c3bdfc9245
+            Type: BaseVariableType
+            DataType: Boolean
+            Value: true
+      - Name: IsPull
+        Id: g=9018af9f574714e2121545c9e2352f2e
+        Type: PropertyType
+        DataType: Boolean
+        ReferenceType: HasComponent
+        Value: true
+      - Name: ns=3;Source1
+        Id: g=1cdfd1d6d983ad299410051e81dee28b
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=fc830c7337501dd5047f9ca343b77fb8
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Bad_product/BadErrorCode_Output_Siemens@Value"
+          Children:
+          - Name: IsPull
+            Id: g=2ae200358681083e9669313380e6009b
+            Type: BaseVariableType
+            DataType: Boolean
+            Value: true
+  - Name: AutoConfirm
+    Id: g=6b3f1f29b0a381c215163ef0789c91a1
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: AutoAcknowledge
+    Id: g=b2d53589a4054f4d6ec3e5bdb3569ce2
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: Machine Failed Siemens 1
+  Id: g=e86258a7197c0a972ecc8555f3a89485
+  Type: DigitalAlarm_withArea
+  Children:
+  - Class: Reference
+    Target: ns=19;i=81
+  - Class: Reference
+    Target: ns=19;i=82
+  - Class: Reference
+    Target: ns=19;i=83
+  - Class: Reference
+    Target: ns=19;i=130
+  - Class: Reference
+    Target: ns=19;i=135
+  - Class: Reference
+    Target: ns=19;i=132
+  - Class: Reference
+    Target: ns=19;i=146
+  - Class: Reference
+    Target: ns=19;i=148
+  - Class: Reference
+    Target: ns=19;i=150
+  - Class: Reference
+    Target: ns=19;i=152
+  - Class: Reference
+    Target: ns=19;i=154
+  - Class: Reference
+    Target: ns=19;i=81
+  - Class: Reference
+    Target: ns=19;i=82
+  - Class: Reference
+    Target: ns=19;i=83
+  - Name: NormalStateValue
+    Id: g=a3817fcc698833b0a85879b9578cd940
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=7f698a2d6fe9a1516cdf039892aba339
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: ExpressionEvaluator1
+      Id: g=2187f44ac884d5b3fb82bb770ac6cced
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Id: g=4cdc77a567aedc929844040a984f08fe
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        Value: "{0}&({1}==203)"
+      - Name: ns=3;Source0
+        Id: g=16d26e196423d2466a7bf2b39af98990
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=b2b1033398a16e0026a0bb20b8411ab1
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/SiemensPLC/S7TIAPROFINETStation1/Tags/PLC/Table/Machine_Fault"
+      - Name: ns=3;Source1
+        Id: g=acc9ead41f3de57cdc1edcb5261a7726
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=41c1e76960beb38200337b8c0d52fe70
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Machine_Fault/FaultErrorCode_Output_Siemens"
+  - Name: LastEvent
+    Id: g=ca6832920887820a47b52e183f5da66f
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Area
+    Id: g=fbef0d0f61cd13e30a98f2cefc0dcb73
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "siemen"
+  - Class: Reference
+    Target: ns=19;i=130
+  - Class: Reference
+    Target: ns=19;i=132
+  - Class: Reference
+    Target: ns=19;i=135
+  - Class: Reference
+    Target: ns=19;i=146
+  - Class: Reference
+    Target: ns=19;i=148
+  - Class: Reference
+    Target: ns=19;i=150
+  - Class: Reference
+    Target: ns=19;i=152
+  - Class: Reference
+    Target: ns=19;i=154
+  - Name: Message
+    Id: g=a28ea3daf4d2fce7627c32b83991d24e
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: StringFormatter1
+      Id: g=948d9ffe1b86234db2333d87d61a077c
+      Type: StringFormatter
+      Children:
+      - Name: Format
+        Id: g=e496cc516a119715da9f21f0c1b1dcea
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        Value: {"LocaleId":"en-US","Text":"Siemens PLC Machine Stopped( Error code = {1})"}
+      - Name: IsPull
+        Id: g=6d41145d2077a3e3f79a1618ee8ee5f7
+        Type: PropertyType
+        DataType: Boolean
+        ReferenceType: HasComponent
+        Value: true
+      - Name: ns=3;Source1
+        Id: g=cc2d3620e05ac1888d9d830648bc07e2
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=4c12fe74111730be9fd6ddc972ad4065
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Machine_Fault/FaultErrorCode_Output_Siemens@Value"
+          Children:
+          - Name: IsPull
+            Id: g=eb77148f92d0fe25e6a03ae5ab73c455
+            Type: BaseVariableType
+            DataType: Boolean
+            Value: true
+  - Name: AutoConfirm
+    Id: g=25c7731325efe562e8eb35b7fd0593bb
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: AutoAcknowledge
+    Id: g=76e0256947a9b63b05b5eeca733d02be
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: Machine Failed Siemens 2
+  Id: g=1ee2dba7a2673996c6f23eed113e535a
+  Type: DigitalAlarm_withArea
+  Children:
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=15e0dc94fa33621b17755155d5769481
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=5a2ca4a8aadb75690f4535469e09b201
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: ExpressionEvaluator1
+      Id: g=7adf732094bb48b2cdcf419f846d1c88
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Id: g=e7580fc714a127787bf7a2d6ad8c0f6e
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        Value: "{0}&({1}==204)"
+      - Name: ns=3;Source0
+        Id: g=842d7afb36f9891a2c9727a5dbdeeb33
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=5ed85a4f3379df53005fc041ff0de41b
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/SiemensPLC/S7TIAPROFINETStation1/Tags/PLC/Table/Machine_Fault"
+      - Name: ns=3;Source1
+        Id: g=54430be6a03c9b93730bc501230779a8
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=f7466c2b87b9437f20283958426c3723
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Machine_Fault/FaultErrorCode_Output_Siemens"
+  - Name: LastEvent
+    Id: g=ed80ce2a42953503838967dde148c1db
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Area
+    Id: g=ad38c4a02748c1090c0588e82c7d27db
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "siemen"
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=892c8131cf86bab93e6ed2d339d767ad
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: StringFormatter1
+      Id: g=deb9947106ef0205109f882e87e06650
+      Type: StringFormatter
+      Children:
+      - Name: Format
+        Id: g=871aa3533dba5bb432d2939856d20105
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        Value: {"LocaleId":"en-US","Text":"Siemens PLC Machine Stopped( Error code = {1})"}
+      - Name: IsPull
+        Id: g=2bcc18a6bab9202a02b98dfbd3736490
+        Type: PropertyType
+        DataType: Boolean
+        ReferenceType: HasComponent
+        Value: true
+      - Name: ns=3;Source1
+        Id: g=173f612a19900e652267ca8961b71b16
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=7478195183862785298f7675f7b97df6
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Machine_Fault/FaultErrorCode_Output_Siemens@Value"
+          Children:
+          - Name: IsPull
+            Id: g=a8215fe9a5aca4eb650b3d454275f2d5
+            Type: BaseVariableType
+            DataType: Boolean
+            Value: true
+  - Name: AutoConfirm
+    Id: g=31a48b5df479d896fb3a45530fb71919
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: AutoAcknowledge
+    Id: g=40f21678052e1fb213a27951c023bd45
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: Machine Failed Siemens 3
+  Id: g=e7648fbd551470e073298dd72e9632f7
+  Type: DigitalAlarm_withArea
+  Children:
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=4575e5e39138ebe0bacca7099bc762be
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=e1c57e9682751e8f85ed13e0036c0ec5
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: ExpressionEvaluator1
+      Id: g=a58c2f20caa2d3ba8f9a900f2aac8f0f
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Id: g=3e3abc0b0247823546e4ea97a5dac959
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        Value: "{0}&({1}==205)"
+      - Name: ns=3;Source0
+        Id: g=7fce12384c0fe26b5e0d307dfcee48a5
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=4bd4d220e58c9b0af6fcf0ac7dc8ba4c
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/SiemensPLC/S7TIAPROFINETStation1/Tags/PLC/Table/Machine_Fault"
+      - Name: ns=3;Source1
+        Id: g=b9142f315205dd296550d98dc4addd92
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=9e726d5bf20f4a748170dae934e21e34
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Machine_Fault/FaultErrorCode_Output_Siemens"
+  - Name: LastEvent
+    Id: g=66ddead826fae2871e10040d59c06e6f
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Area
+    Id: g=d73d6ccc1685563a63b5a99b5b384c51
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "siemen"
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=af949c43c450f10476c3de30a29b9b23
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: StringFormatter1
+      Id: g=8c9d15998583b6e93f2cb47b25fb4b4e
+      Type: StringFormatter
+      Children:
+      - Name: Format
+        Id: g=28a2ee44f8505da30f006313ab79ca38
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        Value: {"LocaleId":"en-US","Text":"Siemens PLC Machine Stopped( Error code = {1})"}
+      - Name: IsPull
+        Id: g=837c0813b212b4dada66069419c3ca5c
+        Type: PropertyType
+        DataType: Boolean
+        ReferenceType: HasComponent
+        Value: true
+      - Name: ns=3;Source1
+        Id: g=f28ac365deb253d836c6929a9cf6822f
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=e6560e08d927ee61373450458418c4de
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Machine_Fault/FaultErrorCode_Output_Siemens@Value"
+          Children:
+          - Name: IsPull
+            Id: g=ad1633a2888fa07a81e3d03210b7347c
+            Type: BaseVariableType
+            DataType: Boolean
+            Value: true
+  - Name: AutoConfirm
+    Id: g=b63aea2f7e1456d4381234907daa2da8
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: AutoAcknowledge
+    Id: g=6fd33d8482da26a0716e76ee8e20ea31
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: Bad Product Delta 1
+  Id: g=38f7ed45840c0005f626bcad30e846f3
+  Type: DigitalAlarm_withArea
+  Children:
+  - Class: Reference
+    Target: ns=19;i=81
+  - Class: Reference
+    Target: ns=19;i=82
+  - Class: Reference
+    Target: ns=19;i=83
+  - Class: Reference
+    Target: ns=19;i=130
+  - Class: Reference
+    Target: ns=19;i=135
+  - Class: Reference
+    Target: ns=19;i=132
+  - Class: Reference
+    Target: ns=19;i=146
+  - Class: Reference
+    Target: ns=19;i=148
+  - Class: Reference
+    Target: ns=19;i=150
+  - Class: Reference
+    Target: ns=19;i=152
+  - Class: Reference
+    Target: ns=19;i=154
+  - Class: Reference
+    Target: ns=19;i=81
+  - Class: Reference
+    Target: ns=19;i=82
+  - Class: Reference
+    Target: ns=19;i=83
+  - Name: NormalStateValue
+    Id: g=f264f47b11cb671058f9eb24b4d9e9fa
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=dab7ade7105b7aa83763f6e0c79beb39
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: ExpressionEvaluator1
+      Id: g=d464b305530a9556029a80dce933e8b9
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Id: g=f1563ed9d33f0185497e5486b9547eb2
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        Value: "{0}&({1}==301)"
+      - Name: ns=3;Source0
+        Id: g=77b89afb8d40afecfeb1f51423db0ca7
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=8a625d7c719955811f2825848bbb3374
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/DeltaPLC_Modbus/delta/Tags/Simbad_Latch"
+      - Name: ns=3;Source1
+        Id: g=946e664f2ab77e04eb3130f24bf962e8
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=7b3cc6fd156d0d68301e47bf17fadabe
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Bad_product/BadErrorCode_Output_Delta"
+  - Name: LastEvent
+    Id: g=7519911e1fd17622e615936d43eec1ea
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Area
+    Id: g=e9b15eb58bed8ed08c7ccc7172d03a68
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "delta"
+  - Class: Reference
+    Target: ns=19;i=130
+  - Class: Reference
+    Target: ns=19;i=132
+  - Class: Reference
+    Target: ns=19;i=135
+  - Class: Reference
+    Target: ns=19;i=146
+  - Class: Reference
+    Target: ns=19;i=148
+  - Class: Reference
+    Target: ns=19;i=150
+  - Class: Reference
+    Target: ns=19;i=152
+  - Class: Reference
+    Target: ns=19;i=154
+  - Name: Message
+    Id: g=e3cde71d0acbd8b5eb49129ea881845f
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: StringFormatter1
+      Id: g=fcda5121be900a94d3e4d384638a4a7f
+      Type: StringFormatter
+      Children:
+      - Name: Format
+        Id: g=1092e101695b74423792eea96e74ede4
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        Value: {"LocaleId":"en-US","Text":"{0} Bad product in Delta PLC Machine( Error code = {1})"}
+      - Name: ns=3;Source0
+        Id: g=17b7af18001fda041ecfd05e46a7467a
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=45bdfa4e3882997704c180a075e6a635
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/DeltaPLC_Modbus/delta/Tags/bad_sim_Pro"
+          Children:
+          - Name: IsPull
+            Id: g=cb8c91df76aa671884d578126fe19b0f
+            Type: BaseVariableType
+            DataType: Boolean
+            Value: true
+      - Name: IsPull
+        Id: g=c0b0d8d191145bb915243f85498d5cea
+        Type: PropertyType
+        DataType: Boolean
+        ReferenceType: HasComponent
+        Value: true
+      - Name: ns=3;Source1
+        Id: g=7d146af99170f90548b73d286dcfb0e7
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=4d569fcd49a729d2fea93bd312e798f8
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Bad_product/BadErrorCode_Output_Delta@Value"
+          Children:
+          - Name: IsPull
+            Id: g=b850983e2acd67ee977b96faf769f919
+            Type: BaseVariableType
+            DataType: Boolean
+            Value: true
+  - Name: AutoAcknowledge
+    Id: g=bbab9aa4bb9ac17bf63a1d2c4c349451
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: AutoConfirm
+    Id: g=1766af6a60f612112ce59e5e7e881bf2
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: Bad Product Delta 2
+  Id: g=73dc3d67a5a237d59b894d8f2cf3553f
+  Type: DigitalAlarm_withArea
+  Children:
+  - Class: Reference
+    Target: ns=19;i=81
+  - Class: Reference
+    Target: ns=19;i=82
+  - Class: Reference
+    Target: ns=19;i=83
+  - Class: Reference
+    Target: ns=19;i=130
+  - Class: Reference
+    Target: ns=19;i=135
+  - Class: Reference
+    Target: ns=19;i=132
+  - Class: Reference
+    Target: ns=19;i=146
+  - Class: Reference
+    Target: ns=19;i=148
+  - Class: Reference
+    Target: ns=19;i=150
+  - Class: Reference
+    Target: ns=19;i=152
+  - Class: Reference
+    Target: ns=19;i=154
+  - Class: Reference
+    Target: ns=19;i=81
+  - Class: Reference
+    Target: ns=19;i=82
+  - Class: Reference
+    Target: ns=19;i=83
+  - Name: NormalStateValue
+    Id: g=72e7013c93ca9e305f65ca44ebf5c4bd
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=5d920a10a2d6be8d79926fb43fe2b8c4
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: ExpressionEvaluator1
+      Id: g=0450b9f1f4c02e5053b9ecb98a3cdfeb
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Id: g=877d15cd82ebd8edeb6d78a5ebff1e0e
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        Value: "{0}&({1}==302)"
+      - Name: ns=3;Source0
+        Id: g=6ea257063e9a4048ef3c6f4852045ded
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=32a8bc8055f49059507f549626de8a43
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/DeltaPLC_Modbus/delta/Tags/Simbad_Latch"
+      - Name: ns=3;Source1
+        Id: g=881eb5661e73d3307c2c0e38df9f290f
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=b95f2aba49e3ca269a7bce93d98b63b2
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Bad_product/BadErrorCode_Output_Delta"
+  - Name: LastEvent
+    Id: g=771165e984e4a4c039870108fd18d3f2
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Area
+    Id: g=61bfb4146ba7d5fa804f4bb44ec42054
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "delta"
+  - Class: Reference
+    Target: ns=19;i=130
+  - Class: Reference
+    Target: ns=19;i=132
+  - Class: Reference
+    Target: ns=19;i=135
+  - Class: Reference
+    Target: ns=19;i=146
+  - Class: Reference
+    Target: ns=19;i=148
+  - Class: Reference
+    Target: ns=19;i=150
+  - Class: Reference
+    Target: ns=19;i=152
+  - Class: Reference
+    Target: ns=19;i=154
+  - Name: Message
+    Id: g=258227951a206bf5beb56d85f6571cf0
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: StringFormatter1
+      Id: g=53262436ed7bf1a31b63f728593f2e6b
+      Type: StringFormatter
+      Children:
+      - Name: Format
+        Id: g=dc3a2aa10a83d6faff7c536db9b0c5cb
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        Value: {"LocaleId":"en-US","Text":"{0} Bad product in Delta PLC Machine( Error code = {1})"}
+      - Name: ns=3;Source0
+        Id: g=cd47faf8d5a0d1847905885832a3398f
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=2fefba2ef8a4f3ac38cf616fc7ebb6f4
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/DeltaPLC_Modbus/delta/Tags/bad_sim_Pro"
+          Children:
+          - Name: IsPull
+            Id: g=70c7ecf16ff68ef115f2601b4094ee71
+            Type: BaseVariableType
+            DataType: Boolean
+            Value: true
+      - Name: IsPull
+        Id: g=2f4ae622484f64457a8bc5f38c907871
+        Type: PropertyType
+        DataType: Boolean
+        ReferenceType: HasComponent
+        Value: true
+      - Name: ns=3;Source1
+        Id: g=e32fb22a843a16ef7622f08fc5b7ddb5
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=c8881793994b552a6289239d781e0db9
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Bad_product/BadErrorCode_Output_Delta@Value"
+          Children:
+          - Name: IsPull
+            Id: g=1477bdb57ee0f0e3f6ef8fc4e8d5750a
+            Type: BaseVariableType
+            DataType: Boolean
+            Value: true
+  - Name: AutoAcknowledge
+    Id: g=7468305d308a1ba3f8bbaa6916265344
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: AutoConfirm
+    Id: g=590b05a6d614ca257d4bcee300c0161f
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: Machine Failed Delta 1
+  Id: g=12eef5b6939cdac6b26f8abc84bb03e5
+  Type: DigitalAlarm_withArea
+  Children:
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=da4407e1924a7fe1f183a9ed145ecba8
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=83bb30944475fd86762656a81721fd8d
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: ExpressionEvaluator1
+      Id: g=f095784e9f3aaa5be9e99765add305f3
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Id: g=eeb9e1dd8fdf711db7bc2ca0141c07ea
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        Value: "{0}&({1}==303)"
+      - Name: ns=3;Source0
+        Id: g=21b725b31da0a063eee14929fe94a63f
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=0584f5f572ca522b26aeec66786c19fa
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/DeltaPLC_Modbus/delta/Tags/Machine_Fault_Sim"
+      - Name: ns=3;Source1
+        Id: g=0827ec532891f2c91991793808fe1688
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=faf25e9829a6c5dbd7d88288fb172978
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Machine_Fault/FaultErrorCode_Output_Delta"
+  - Name: LastEvent
+    Id: g=ffa5beba5f59783f7ca9afc4ef3246c4
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Area
+    Id: g=ed5edfb509553cd0b3a907e79ba88df5
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "delta"
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=2ab2ef29b8661de013cf321434b578c3
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: StringFormatter1
+      Id: g=3bf931b470d22879a91ee1c83289c70f
+      Type: StringFormatter
+      Children:
+      - Name: Format
+        Id: g=f738c2354ae9ef78f640b744508d7e02
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        Value: {"LocaleId":"en-US","Text":"Delta PLC Machine stopped( Error code = {1})"}
+      - Name: IsPull
+        Id: g=b4724f88167ab643f0d345b6254a9a22
+        Type: PropertyType
+        DataType: Boolean
+        ReferenceType: HasComponent
+        Value: true
+      - Name: ns=3;Source1
+        Id: g=206e819082dcd1d157ae1355009b2e2a
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=1761a873f7981997b46b959efae4cc45
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Machine_Fault/FaultErrorCode_Output_Delta@Value"
+          Children:
+          - Name: IsPull
+            Id: g=d1365891607032db0ad3b5ec79d35bf4
+            Type: BaseVariableType
+            DataType: Boolean
+            Value: true
+  - Name: AutoAcknowledge
+    Id: g=d69391bc83ad8425cbc2e947b71cfc5a
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: AutoConfirm
+    Id: g=06c0e61f3c7ca12abe87eaeb979f0add
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: Machine Failed Delta 2
+  Id: g=14aa8383ecaf9d50df6e7e19d991d9b0
+  Type: DigitalAlarm_withArea
+  Children:
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=2325a35fafb4a0e2398b40a96366feec
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=3a023dcc411bce2018933a882a223b1b
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: ExpressionEvaluator1
+      Id: g=90b2f72d1c6067e2f1ebb8de6dd9fec1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Id: g=1eb1172441a1e87c835b12de3af0318d
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        Value: "{0}&({1}==304)"
+      - Name: ns=3;Source0
+        Id: g=53edccf774f25e7e69fd38b76fc5f1cb
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=c38962d6358e344115ff235ca0c7c1b6
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/DeltaPLC_Modbus/delta/Tags/Machine_Fault_Sim"
+      - Name: ns=3;Source1
+        Id: g=0c80a50ec7614dad387dd2af8abb3ea0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=3493726cbcc71a4a003da6ddd8898d20
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Machine_Fault/FaultErrorCode_Output_Delta"
+  - Name: LastEvent
+    Id: g=8c7f2f926ecec2f8e85228261b291187
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Area
+    Id: g=c198bef16b64a8cbeb9636ae6ccadff1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "delta"
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=9666110d355ccadbb7e3e5f528bb526b
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: StringFormatter1
+      Id: g=35a074c1d2c6344fc8b012298c57c4c7
+      Type: StringFormatter
+      Children:
+      - Name: Format
+        Id: g=f73cbf30fd8a965ae927648a6f7cf622
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        Value: {"LocaleId":"en-US","Text":"Delta PLC Machine stopped( Error code = {1})"}
+      - Name: IsPull
+        Id: g=87f6642686b1e5aa374724366cd97c01
+        Type: PropertyType
+        DataType: Boolean
+        ReferenceType: HasComponent
+        Value: true
+      - Name: ns=3;Source1
+        Id: g=ff1c72d8f78482f5c34f43dfbac774dd
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=a98a5d29af35f7bb1b724746aee70d0e
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Machine_Fault/FaultErrorCode_Output_Delta@Value"
+          Children:
+          - Name: IsPull
+            Id: g=700be38fc052817f2d45438ce9c3a126
+            Type: BaseVariableType
+            DataType: Boolean
+            Value: true
+  - Name: AutoAcknowledge
+    Id: g=1404df27855284fcb50dd23253d77a9d
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: AutoConfirm
+    Id: g=ed5cb87e0485102508ed9f1e59c34f38
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: Machine Failed Delta 3
+  Id: g=b44a3e4b02038fbf3871015906096924
+  Type: DigitalAlarm_withArea
+  Children:
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=1e8065276a78d39e306fcab870d08cab
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=b52b8952b8bf336bc1da907cb84984b2
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: ExpressionEvaluator1
+      Id: g=2e97516586823b56b8024c1425562892
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Id: g=8dd21593ba1d80f812baa5d92a11eeb6
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        Value: "{0}&({1}==305)"
+      - Name: ns=3;Source0
+        Id: g=13949bed5f224fcbe306e760f67076d4
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=677bef81c2d770fde582c0599251b40c
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/DeltaPLC_Modbus/delta/Tags/Machine_Fault_Sim"
+      - Name: ns=3;Source1
+        Id: g=459bd7970a0a6f89bae457d91e026955
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=3fe582ce027515f8ded778dd91027254
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Machine_Fault/FaultErrorCode_Output_Delta"
+  - Name: LastEvent
+    Id: g=1ef7347336384e8c387b7bd86ffa517a
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Area
+    Id: g=1f43d2bbbdcd7086b81aa45f3da6572d
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "delta"
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=c9d3c7354d8142482c29d7c7c55977d7
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: StringFormatter1
+      Id: g=7267a210082e9305c9ec8e2c4eeb3a3f
+      Type: StringFormatter
+      Children:
+      - Name: Format
+        Id: g=12f3bc2a0a4083ccaf2139a83df29ef3
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        Value: {"LocaleId":"en-US","Text":"Delta PLC Machine stopped( Error code = {1})"}
+      - Name: IsPull
+        Id: g=63b448e27f3f18623606843c69cd1682
+        Type: PropertyType
+        DataType: Boolean
+        ReferenceType: HasComponent
+        Value: true
+      - Name: ns=3;Source1
+        Id: g=18288c7984734b00d130e28631a502f6
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=bf13dfc59819100a2acd7272ab44703e
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Machine_Fault/FaultErrorCode_Output_Delta@Value"
+          Children:
+          - Name: IsPull
+            Id: g=77440c32bc518ff23e31de1d2066b43b
+            Type: BaseVariableType
+            DataType: Boolean
+            Value: true
+  - Name: AutoAcknowledge
+    Id: g=87be7c939a117de52cca1e91abd7a083
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: AutoConfirm
+    Id: g=b45d1871447adba543524d3630f03d2f
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: Bad Product Mitsu 1
+  Id: g=d6373bbbf791aa1b59a25bc3ae01ed8a
+  Type: DigitalAlarm_withArea
+  Children:
+  - Class: Reference
+    Target: ns=19;i=81
+  - Class: Reference
+    Target: ns=19;i=82
+  - Class: Reference
+    Target: ns=19;i=83
+  - Class: Reference
+    Target: ns=19;i=130
+  - Class: Reference
+    Target: ns=19;i=135
+  - Class: Reference
+    Target: ns=19;i=132
+  - Class: Reference
+    Target: ns=19;i=146
+  - Class: Reference
+    Target: ns=19;i=148
+  - Class: Reference
+    Target: ns=19;i=150
+  - Class: Reference
+    Target: ns=19;i=152
+  - Class: Reference
+    Target: ns=19;i=154
+  - Class: Reference
+    Target: ns=19;i=81
+  - Class: Reference
+    Target: ns=19;i=82
+  - Class: Reference
+    Target: ns=19;i=83
+  - Name: NormalStateValue
+    Id: g=29738a083db9a65d3b111a59f2d9b2c3
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=704aa0bdbf57dd6a81f2a80bf5d797e9
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: ExpressionEvaluator1
+      Id: g=dddd1f5056fc9aae6f4c1345a97415c6
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Id: g=cf745b11b48352d5f047c473331c6563
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        Value: "{0}&({1}==401)"
+      - Name: ns=3;Source0
+        Id: g=8020551a4cf97d03a399ca9c1fbc0917
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=2e36ad7b4987a87cd2bf56ec4c88b917
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/MitsuPLC/MELSECQStation1/Tags/Sim_Bad_Prod_Latch"
+      - Name: ns=3;Source1
+        Id: g=689a2bd3d53294dac2ece7cd916198b6
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=1b188bbbae12cd110f98456a78adef39
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Bad_product/BadErrorCode_Output_Mitsu"
+  - Name: LastEvent
+    Id: g=c077cf4142fee4ea2e10e2c2f540dc6c
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Area
+    Id: g=31c4bce3ea1f13331cb338d411d80741
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "mitsu"
+  - Class: Reference
+    Target: ns=19;i=130
+  - Class: Reference
+    Target: ns=19;i=132
+  - Class: Reference
+    Target: ns=19;i=135
+  - Class: Reference
+    Target: ns=19;i=146
+  - Class: Reference
+    Target: ns=19;i=148
+  - Class: Reference
+    Target: ns=19;i=150
+  - Class: Reference
+    Target: ns=19;i=152
+  - Class: Reference
+    Target: ns=19;i=154
+  - Name: Message
+    Id: g=01fdbcf1974c2cf6513ae5d5adcc6481
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: StringFormatter1
+      Id: g=bfdd3e450a49620a4d68a95114ff7a40
+      Type: StringFormatter
+      Children:
+      - Name: Format
+        Id: g=fa63c789f2ef1f5d359173f173ad7451
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        Value: {"LocaleId":"en-US","Text":"{0} Bad product in Mitsu PLC Machine( Error code = {1})"}
+      - Name: ns=3;Source0
+        Id: g=1abb7d1909cce92eec05d522e35df12b
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=478f3b2d9b51daf5e874b925d75c49db
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/MitsuPLC/MELSECQStation1/Tags/inserd_bad"
+          Children:
+          - Name: IsPull
+            Id: g=14f844e620c75fb7f7381ffefc818cda
+            Type: BaseVariableType
+            DataType: Boolean
+            Value: true
+      - Name: IsPull
+        Id: g=591f357fe458069358050a0c7cf9118c
+        Type: PropertyType
+        DataType: Boolean
+        ReferenceType: HasComponent
+        Value: true
+      - Name: ns=3;Source1
+        Id: g=641408c4763fc35a6a3c060bd1f1bcda
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=8e81cad70e51151d9cb173a56cacf991
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Bad_product/BadErrorCode_Output_Mitsu@Value"
+          Children:
+          - Name: IsPull
+            Id: g=2b3734620234645943a8f23d37bdbdd6
+            Type: BaseVariableType
+            DataType: Boolean
+            Value: true
+  - Name: AutoAcknowledge
+    Id: g=b3c99c8ca1039cf2940ae226c1a8c71a
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: AutoConfirm
+    Id: g=a365872d654171751c54eb3dd0dddbb5
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: Bad Product Mitsu 2
+  Id: g=7d374852bcd7d12445143274ca573989
+  Type: DigitalAlarm_withArea
+  Children:
+  - Class: Reference
+    Target: ns=19;i=81
+  - Class: Reference
+    Target: ns=19;i=82
+  - Class: Reference
+    Target: ns=19;i=83
+  - Class: Reference
+    Target: ns=19;i=130
+  - Class: Reference
+    Target: ns=19;i=135
+  - Class: Reference
+    Target: ns=19;i=132
+  - Class: Reference
+    Target: ns=19;i=146
+  - Class: Reference
+    Target: ns=19;i=148
+  - Class: Reference
+    Target: ns=19;i=150
+  - Class: Reference
+    Target: ns=19;i=152
+  - Class: Reference
+    Target: ns=19;i=154
+  - Class: Reference
+    Target: ns=19;i=81
+  - Class: Reference
+    Target: ns=19;i=82
+  - Class: Reference
+    Target: ns=19;i=83
+  - Name: NormalStateValue
+    Id: g=6b28937ce9c3708ba0b41da30eb4e56b
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=9d65b432b2e5df327cacda730e7ac748
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: ExpressionEvaluator1
+      Id: g=b51e94d48fc76d7c69582cd7ce1109db
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Id: g=ec647e3d9dab51e697deedd57e2c57df
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        Value: "{0}&({1}==402)"
+      - Name: ns=3;Source0
+        Id: g=839dead217f51f0b13171c7e899582d6
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=52c279c5398018399a12d3716315f969
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/MitsuPLC/MELSECQStation1/Tags/Sim_Bad_Prod_Latch"
+      - Name: ns=3;Source1
+        Id: g=0d73d49426cea63507ca6c63f4901b4d
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=48893937ecc72e6170939b835200fa8a
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Bad_product/BadErrorCode_Output_Mitsu"
+  - Name: LastEvent
+    Id: g=38b0e868fd0e072105d3cdddd063b851
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Area
+    Id: g=c182fbeec7b43d8dd321e6a7e43be112
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "mitsu"
+  - Class: Reference
+    Target: ns=19;i=130
+  - Class: Reference
+    Target: ns=19;i=132
+  - Class: Reference
+    Target: ns=19;i=135
+  - Class: Reference
+    Target: ns=19;i=146
+  - Class: Reference
+    Target: ns=19;i=148
+  - Class: Reference
+    Target: ns=19;i=150
+  - Class: Reference
+    Target: ns=19;i=152
+  - Class: Reference
+    Target: ns=19;i=154
+  - Name: Message
+    Id: g=180c0269a7046dea637de9b105ccb119
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: StringFormatter1
+      Id: g=969c178ff8b9bc81b8198c71de3784fa
+      Type: StringFormatter
+      Children:
+      - Name: Format
+        Id: g=8ddb0f1f46f19336bcbc4565dbc4d011
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        Value: {"LocaleId":"en-US","Text":"{0} Bad product in Mitsu PLC Machine( Error code = {1})"}
+      - Name: ns=3;Source0
+        Id: g=1548332b0194a932368bcf4602e40046
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=6b4350fb9f12d1542b364b6503504465
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/MitsuPLC/MELSECQStation1/Tags/inserd_bad"
+          Children:
+          - Name: IsPull
+            Id: g=9a7bb5b08b9abe45972807ebef9ea657
+            Type: BaseVariableType
+            DataType: Boolean
+            Value: true
+      - Name: IsPull
+        Id: g=e211f0a5f09ebd77a412aa63f1917321
+        Type: PropertyType
+        DataType: Boolean
+        ReferenceType: HasComponent
+        Value: true
+      - Name: ns=3;Source1
+        Id: g=ed6aff6c6d2eae1bf692d4005084f8be
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=55bcc72afdb312108802445530ecb689
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Bad_product/BadErrorCode_Output_Mitsu@Value"
+          Children:
+          - Name: IsPull
+            Id: g=d41fb94794fac6aa2fe6eab336586372
+            Type: BaseVariableType
+            DataType: Boolean
+            Value: true
+  - Name: AutoAcknowledge
+    Id: g=a1635c4e86420cb2c374728790647eee
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: AutoConfirm
+    Id: g=9658234762da179731ad0054871d4871
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: Machine Failed Mitsu 1
+  Id: g=e0aa6fe2758a9f9a1c17e4c84602c087
+  Type: DigitalAlarm_withArea
+  Children:
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=757208cf5f275f140594c3018d1fed28
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=db0e1fde7b502f73b006dd49fda1f223
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: ExpressionEvaluator1
+      Id: g=f0e486ffc34c19331ec35e7658891446
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Id: g=29443263680811a1f59773fbdeddb085
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        Value: "{0}&({1}==403)"
+      - Name: ns=3;Source0
+        Id: g=abd2ccfc68c5f41db8a3499b66a8e084
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=bf58a0f70343e2d762257c9fc4d28ef6
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/MitsuPLC/MELSECQStation1/Tags/machine_fault"
+      - Name: ns=3;Source1
+        Id: g=bb776e170843b92f23e0548b3f2502a5
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=d2efd7951ea81b5480d0dc4293eea39f
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Machine_Fault/FaultErrorCode_Output_Mitsubishi"
+  - Name: LastEvent
+    Id: g=de6f608f8c0716d16e4eb5a798c0d678
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Area
+    Id: g=e8c3a0b3701e5c2ac7c6f7d21aacabc8
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "mitsu"
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=09b741ae1ddf8e1f59f7ebdd6af9bde5
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: StringFormatter1
+      Id: g=cbd9409e7d592814baab5c90c5d290c2
+      Type: StringFormatter
+      Children:
+      - Name: Format
+        Id: g=3a60134cff6b45a8dc9cb6f41b5e1e95
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        Value: {"LocaleId":"en-US","Text":"{0} Bad product in Mitsu PLC Machine( Error code = {1})"}
+      - Name: ns=3;Source0
+        Id: g=b0e817c69eece82e5425d416136594a4
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=3e0bf1eb647293cb04e1affcccc3b49f
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/MitsuPLC/MELSECQStation1/Tags/inserd_bad"
+          Children:
+          - Name: IsPull
+            Id: g=2ebe2747fe51be6486f319b27708f95d
+            Type: BaseVariableType
+            DataType: Boolean
+            Value: true
+      - Name: IsPull
+        Id: g=191e898d370cc76a2b85cfec28ca5777
+        Type: PropertyType
+        DataType: Boolean
+        ReferenceType: HasComponent
+        Value: true
+      - Name: ns=3;Source1
+        Id: g=caa18bc8647b47248a5f23897c38dd09
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=d3e0e53b8d04076115b5cb984a643bec
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Bad_product/BadErrorCode_Output_Mitsu@Value"
+          Children:
+          - Name: IsPull
+            Id: g=b3620d50ac05daf840b20efb845bba80
+            Type: BaseVariableType
+            DataType: Boolean
+            Value: true
+  - Name: AutoAcknowledge
+    Id: g=7ab1642b07639de082098ecbe4481ba0
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: AutoConfirm
+    Id: g=6a2b2ef8ba028c11a2688e2f09019b88
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: Machine Failed Mitsu 2
+  Id: g=07e3a4637fc22d6cdd2ac98bebd693aa
+  Type: DigitalAlarm_withArea
+  Children:
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=e24dc855e6e429726d9eba5b7c175271
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=1152357f2cfdcfea7a24ad0c4af347df
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: ExpressionEvaluator1
+      Id: g=1a5bf57d0d85533de84c15e922c8149f
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Id: g=c19016c703130fe9c22b698b41502f83
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        Value: "{0}&({1}==404)"
+      - Name: ns=3;Source0
+        Id: g=b92a485498533e9761b31c4c9793fc54
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=f65f76ce691692b02db423ede72d14a8
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/MitsuPLC/MELSECQStation1/Tags/machine_fault"
+      - Name: ns=3;Source1
+        Id: g=d3fa8f32d1c7998599e8b7bb21720af2
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=7568dae504b066b9f19455f2dbea8b5e
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Machine_Fault/FaultErrorCode_Output_Mitsubishi"
+  - Name: LastEvent
+    Id: g=5fc5f921bed90559244cafcbce6b415e
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Area
+    Id: g=b11f4eb5e2a0ff8525d9e921fe8b244b
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "mitsu"
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=7d5ba660addac54cd433bf874ae09bc0
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: StringFormatter1
+      Id: g=0b7db72441f00347141249a3cebc2810
+      Type: StringFormatter
+      Children:
+      - Name: Format
+        Id: g=fa290c2f66b3fa7f11c4f851c947832d
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        Value: {"LocaleId":"en-US","Text":"{0} Bad product in Mitsu PLC Machine( Error code = {1})"}
+      - Name: ns=3;Source0
+        Id: g=3fa73d03ee5ee722122b40155296e0c4
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=45845bc580361ecb60e70d18486ac8c6
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/MitsuPLC/MELSECQStation1/Tags/inserd_bad"
+          Children:
+          - Name: IsPull
+            Id: g=2c920b53a68b428bd1dadd48463a6f9a
+            Type: BaseVariableType
+            DataType: Boolean
+            Value: true
+      - Name: IsPull
+        Id: g=23f5245e3c063ee0a2a3cdb0fc0eb08a
+        Type: PropertyType
+        DataType: Boolean
+        ReferenceType: HasComponent
+        Value: true
+      - Name: ns=3;Source1
+        Id: g=fe8c1129f796116f6f4efed2f8f40ed1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=b6b07a8c1e380b715ed1c6e7da4fe266
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Bad_product/BadErrorCode_Output_Mitsu@Value"
+          Children:
+          - Name: IsPull
+            Id: g=1db8a7d51e0d5d7e492e1458cbdd0a66
+            Type: BaseVariableType
+            DataType: Boolean
+            Value: true
+  - Name: AutoAcknowledge
+    Id: g=b18b29cd951f24dd4d23444ecc25c0ea
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: AutoConfirm
+    Id: g=85270e2bbbb884039bbdb10f66225f7b
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: Machine Failed Mitsu 3
+  Id: g=d12ce41328d620527b90eaf6e5c03bc3
+  Type: DigitalAlarm_withArea
+  Children:
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Name: NormalStateValue
+    Id: g=5944c419d5260a8ca9fa0bf87db20a02
+    Type: BaseDataVariableType
+    DataType: Double
+  - Name: InputValue
+    Id: g=6384d65bcd2a878b87116a7b073799a5
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: ExpressionEvaluator1
+      Id: g=467830cc5872d920329bc19bf209559c
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Id: g=d8c69b0b375d79f9bb4817c58d07ab16
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        Value: "{0}&({1}==405)"
+      - Name: ns=3;Source0
+        Id: g=192b78bfe4292725175142f49cffa07b
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=662a5abb02c41130c215f34721256b11
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/MitsuPLC/MELSECQStation1/Tags/machine_fault"
+      - Name: ns=3;Source1
+        Id: g=c4493eb2025232642c0432e8a60d34dc
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=ef60a6a54e82e40ef37b873497cf6fbe
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Machine_Fault/FaultErrorCode_Output_Mitsubishi"
+  - Name: LastEvent
+    Id: g=4cfd98d0970c09fb101588bab8de93f7
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: Area
+    Id: g=408091eba7be168e60310eb60979f387
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "mitsu"
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
+  - Name: Message
+    Id: g=cbca9f639e55f3b2b697d7a235fe23c7
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: StringFormatter1
+      Id: g=3425f1b29217ff07c17f6cab5635d91d
+      Type: StringFormatter
+      Children:
+      - Name: Format
+        Id: g=4c7fa04f996f4d4efd1eccbc75224f6d
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        Value: {"LocaleId":"en-US","Text":"{0} Bad product in Mitsu PLC Machine( Error code = {1})"}
+      - Name: ns=3;Source0
+        Id: g=e862a34fc1132151aab5cb3291255259
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=e6aba061947227e1042ed6d77be5b0ca
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../CommDrivers/MitsuPLC/MELSECQStation1/Tags/inserd_bad"
+          Children:
+          - Name: IsPull
+            Id: g=f8255a01985c3cc67b709aa700a04d64
+            Type: BaseVariableType
+            DataType: Boolean
+            Value: true
+      - Name: IsPull
+        Id: g=3a687446b7d1e602208c4db0f39924c5
+        Type: PropertyType
+        DataType: Boolean
+        ReferenceType: HasComponent
+        Value: true
+      - Name: ns=3;Source1
+        Id: g=2d3d95681ae4564c56a06daa885a3ebd
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=238fbc47a93e66b364415c589792ec6c
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/Bad_product/BadErrorCode_Output_Mitsu@Value"
+          Children:
+          - Name: IsPull
+            Id: g=a798315e58ef2fb5cee14aee5caab625
+            Type: BaseVariableType
+            DataType: Boolean
+            Value: true
+  - Name: AutoAcknowledge
+    Id: g=2b0c8bde86f7dffe6b9285e4f272137b
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: AutoConfirm
+    Id: g=d4225e76ffc046d6bae5003ca85480ca
+    Type: BaseDataVariableType
+    DataType: Boolean

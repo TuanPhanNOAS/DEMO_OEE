@@ -1,0 +1,4 @@
+Name: MitsuPLC
+Type: MelsecQDriver
+Children:
+- File: MELSECQStation1/MELSECQStation1.yaml
