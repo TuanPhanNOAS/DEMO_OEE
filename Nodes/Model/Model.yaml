@@ -12,3 +12,6 @@ Children:
   Type: BaseDataVariableType
   DataType: Int32
 - File: Convert2InternalTag/Convert2InternalTag.yaml
+- Name: Variable1
+  Type: BaseDataVariableType
+  DataType: Int32
