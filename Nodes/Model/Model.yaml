@@ -21,3 +21,6 @@ Children:
 - Name: TestGit2
   Type: BaseDataVariableType
   DataType: Int32
+- Name: TestPull
+  Type: BaseDataVariableType
+  DataType: Int32
