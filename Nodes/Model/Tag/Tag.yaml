@@ -135,3 +135,6 @@ Children:
   Type: BaseDataVariableType
   DataType: Int32
   Value: 18
+- Name: Variable3
+  Type: BaseDataVariableType
+  DataType: Int32
