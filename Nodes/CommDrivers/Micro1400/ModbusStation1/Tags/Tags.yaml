@@ -292,3 +292,19 @@ Children:
     Type: BaseDataVariableType
     DataType: UInt16
     Value: 21
+- Name: Prod_Bad_Code
+  Type: ModbusTag
+  DataType: Int16
+  Children:
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 23
+- Name: Machine_Fault_Code
+  Type: ModbusTag
+  DataType: Int16
+  Children:
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 24
