@@ -15,3 +15,6 @@ Children:
 - Name: Variable1
   Type: BaseDataVariableType
   DataType: Int32
+- Name: TestGithub
+  Type: BaseDataVariableType
+  DataType: Int32
